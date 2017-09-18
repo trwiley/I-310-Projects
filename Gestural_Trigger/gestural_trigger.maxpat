@@ -9,7 +9,7 @@
 			"modernui" : 1
 		}
 ,
-		"rect" : [ 42.0, 85.0, 1029.0, 591.0 ],
+		"rect" : [ 26.0, 85.0, 1029.0, 591.0 ],
 		"bglocked" : 0,
 		"openinpresentation" : 0,
 		"default_fontsize" : 12.0,
@@ -54,7 +54,7 @@
 					"color" : [ 0.113339, 0.606332, 0.609597, 1.0 ],
 					"id" : "obj-128",
 					"maxclass" : "newobj",
-					"numinlets" : 3,
+					"numinlets" : 4,
 					"numoutlets" : 0,
 					"patcher" : 					{
 						"fileversion" : 1,
@@ -95,6 +95,47 @@
 						"subpatcher_template" : "",
 						"boxes" : [ 							{
 								"box" : 								{
+									"id" : "obj-139",
+									"maxclass" : "newobj",
+									"numinlets" : 6,
+									"numoutlets" : 1,
+									"outlettype" : [ "" ],
+									"patching_rect" : [ 315.0, 156.0, 113.0, 22.0 ],
+									"style" : "",
+									"text" : "scale 0. 200. -70. 0"
+								}
+
+							}
+, 							{
+								"box" : 								{
+									"format" : 6,
+									"id" : "obj-138",
+									"maxclass" : "flonum",
+									"numinlets" : 1,
+									"numoutlets" : 2,
+									"outlettype" : [ "", "bang" ],
+									"parameter_enable" : 0,
+									"patching_rect" : [ 315.0, 124.0, 50.0, 22.0 ],
+									"style" : ""
+								}
+
+							}
+, 							{
+								"box" : 								{
+									"comment" : "",
+									"id" : "obj-3",
+									"index" : 4,
+									"maxclass" : "inlet",
+									"numinlets" : 0,
+									"numoutlets" : 1,
+									"outlettype" : [ "" ],
+									"patching_rect" : [ 272.0, 46.0, 30.0, 30.0 ],
+									"style" : ""
+								}
+
+							}
+, 							{
+								"box" : 								{
 									"comment" : "",
 									"id" : "obj-6",
 									"index" : 3,
@@ -102,7 +143,7 @@
 									"numinlets" : 0,
 									"numoutlets" : 1,
 									"outlettype" : [ "int" ],
-									"patching_rect" : [ 340.75, 54.0, 30.0, 30.0 ],
+									"patching_rect" : [ 210.75, 45.0, 30.0, 30.0 ],
 									"style" : ""
 								}
 
@@ -114,7 +155,7 @@
 									"maxclass" : "comment",
 									"numinlets" : 1,
 									"numoutlets" : 0,
-									"patching_rect" : [ 391.0, 40.0, 222.0, 75.0 ],
+									"patching_rect" : [ 391.0, 40.0, 223.0, 75.0 ],
 									"style" : "",
 									"text" : "Name: PlaySound\nDescription: First inlet takes 0 (off) or 1 (on), second takes the name of a sound file, third takes a trigger/toggle to turn on/off sound."
 								}
@@ -183,7 +224,7 @@
 									"orientation" : 1,
 									"outlettype" : [ "signal", "signal", "", "float", "list" ],
 									"parameter_enable" : 1,
-									"patching_rect" : [ 79.75, 282.0, 136.0, 27.0 ],
+									"patching_rect" : [ 79.75, 282.0, 136.0, 41.0 ],
 									"presentation_rect" : [ 105.0, 105.0, 50.0, 27.0 ],
 									"saved_attribute_attributes" : 									{
 										"valueof" : 										{
@@ -289,6 +330,20 @@
 							}
 , 							{
 								"patchline" : 								{
+									"destination" : [ "obj-139", 0 ],
+									"source" : [ "obj-138", 0 ]
+								}
+
+							}
+, 							{
+								"patchline" : 								{
+									"destination" : [ "obj-124", 0 ],
+									"source" : [ "obj-139", 0 ]
+								}
+
+							}
+, 							{
+								"patchline" : 								{
 									"destination" : [ "obj-43", 0 ],
 									"source" : [ "obj-18", 0 ]
 								}
@@ -305,6 +360,13 @@
 								"patchline" : 								{
 									"destination" : [ "obj-34", 0 ],
 									"source" : [ "obj-26", 0 ]
+								}
+
+							}
+, 							{
+								"patchline" : 								{
+									"destination" : [ "obj-138", 0 ],
+									"source" : [ "obj-3", 0 ]
 								}
 
 							}
@@ -385,7 +447,7 @@
 					"color" : [ 0.113339, 0.606332, 0.609597, 1.0 ],
 					"id" : "obj-130",
 					"maxclass" : "newobj",
-					"numinlets" : 3,
+					"numinlets" : 4,
 					"numoutlets" : 0,
 					"patcher" : 					{
 						"fileversion" : 1,
@@ -426,6 +488,47 @@
 						"subpatcher_template" : "",
 						"boxes" : [ 							{
 								"box" : 								{
+									"id" : "obj-139",
+									"maxclass" : "newobj",
+									"numinlets" : 6,
+									"numoutlets" : 1,
+									"outlettype" : [ "" ],
+									"patching_rect" : [ 317.0, 149.0, 113.0, 22.0 ],
+									"style" : "",
+									"text" : "scale 0. 200. -70. 0"
+								}
+
+							}
+, 							{
+								"box" : 								{
+									"format" : 6,
+									"id" : "obj-138",
+									"maxclass" : "flonum",
+									"numinlets" : 1,
+									"numoutlets" : 2,
+									"outlettype" : [ "", "bang" ],
+									"parameter_enable" : 0,
+									"patching_rect" : [ 317.0, 117.0, 50.0, 22.0 ],
+									"style" : ""
+								}
+
+							}
+, 							{
+								"box" : 								{
+									"comment" : "",
+									"id" : "obj-3",
+									"index" : 4,
+									"maxclass" : "inlet",
+									"numinlets" : 0,
+									"numoutlets" : 1,
+									"outlettype" : [ "" ],
+									"patching_rect" : [ 274.0, 39.0, 30.0, 30.0 ],
+									"style" : ""
+								}
+
+							}
+, 							{
+								"box" : 								{
 									"comment" : "",
 									"id" : "obj-6",
 									"index" : 3,
@@ -433,7 +536,7 @@
 									"numinlets" : 0,
 									"numoutlets" : 1,
 									"outlettype" : [ "int" ],
-									"patching_rect" : [ 340.75, 54.0, 30.0, 30.0 ],
+									"patching_rect" : [ 206.75, 40.0, 30.0, 30.0 ],
 									"style" : ""
 								}
 
@@ -445,7 +548,7 @@
 									"maxclass" : "comment",
 									"numinlets" : 1,
 									"numoutlets" : 0,
-									"patching_rect" : [ 391.0, 40.0, 222.0, 75.0 ],
+									"patching_rect" : [ 391.0, 40.0, 223.0, 75.0 ],
 									"style" : "",
 									"text" : "Name: PlaySound\nDescription: First inlet takes 0 (off) or 1 (on), second takes the name of a sound file, third takes a trigger/toggle to turn on/off sound."
 								}
@@ -514,7 +617,7 @@
 									"orientation" : 1,
 									"outlettype" : [ "signal", "signal", "", "float", "list" ],
 									"parameter_enable" : 1,
-									"patching_rect" : [ 79.75, 282.0, 136.0, 27.0 ],
+									"patching_rect" : [ 79.75, 282.0, 136.0, 41.0 ],
 									"presentation_rect" : [ 105.0, 105.0, 50.0, 27.0 ],
 									"saved_attribute_attributes" : 									{
 										"valueof" : 										{
@@ -620,6 +723,20 @@
 							}
 , 							{
 								"patchline" : 								{
+									"destination" : [ "obj-139", 0 ],
+									"source" : [ "obj-138", 0 ]
+								}
+
+							}
+, 							{
+								"patchline" : 								{
+									"destination" : [ "obj-124", 0 ],
+									"source" : [ "obj-139", 0 ]
+								}
+
+							}
+, 							{
+								"patchline" : 								{
 									"destination" : [ "obj-43", 0 ],
 									"source" : [ "obj-18", 0 ]
 								}
@@ -636,6 +753,13 @@
 								"patchline" : 								{
 									"destination" : [ "obj-34", 0 ],
 									"source" : [ "obj-26", 0 ]
+								}
+
+							}
+, 							{
+								"patchline" : 								{
+									"destination" : [ "obj-138", 0 ],
+									"source" : [ "obj-3", 0 ]
 								}
 
 							}
@@ -716,7 +840,7 @@
 					"color" : [ 0.113339, 0.606332, 0.609597, 1.0 ],
 					"id" : "obj-132",
 					"maxclass" : "newobj",
-					"numinlets" : 3,
+					"numinlets" : 4,
 					"numoutlets" : 0,
 					"patcher" : 					{
 						"fileversion" : 1,
@@ -757,6 +881,47 @@
 						"subpatcher_template" : "",
 						"boxes" : [ 							{
 								"box" : 								{
+									"id" : "obj-139",
+									"maxclass" : "newobj",
+									"numinlets" : 6,
+									"numoutlets" : 1,
+									"outlettype" : [ "" ],
+									"patching_rect" : [ 317.0, 149.0, 113.0, 22.0 ],
+									"style" : "",
+									"text" : "scale 0. 200. -70. 0"
+								}
+
+							}
+, 							{
+								"box" : 								{
+									"format" : 6,
+									"id" : "obj-138",
+									"maxclass" : "flonum",
+									"numinlets" : 1,
+									"numoutlets" : 2,
+									"outlettype" : [ "", "bang" ],
+									"parameter_enable" : 0,
+									"patching_rect" : [ 317.0, 117.0, 50.0, 22.0 ],
+									"style" : ""
+								}
+
+							}
+, 							{
+								"box" : 								{
+									"comment" : "",
+									"id" : "obj-3",
+									"index" : 4,
+									"maxclass" : "inlet",
+									"numinlets" : 0,
+									"numoutlets" : 1,
+									"outlettype" : [ "" ],
+									"patching_rect" : [ 274.0, 39.0, 30.0, 30.0 ],
+									"style" : ""
+								}
+
+							}
+, 							{
+								"box" : 								{
 									"comment" : "",
 									"id" : "obj-6",
 									"index" : 3,
@@ -764,7 +929,7 @@
 									"numinlets" : 0,
 									"numoutlets" : 1,
 									"outlettype" : [ "int" ],
-									"patching_rect" : [ 340.75, 54.0, 30.0, 30.0 ],
+									"patching_rect" : [ 209.75, 40.0, 30.0, 30.0 ],
 									"style" : ""
 								}
 
@@ -776,7 +941,7 @@
 									"maxclass" : "comment",
 									"numinlets" : 1,
 									"numoutlets" : 0,
-									"patching_rect" : [ 391.0, 40.0, 222.0, 75.0 ],
+									"patching_rect" : [ 391.0, 40.0, 223.0, 75.0 ],
 									"style" : "",
 									"text" : "Name: PlaySound\nDescription: First inlet takes 0 (off) or 1 (on), second takes the name of a sound file, third takes a trigger/toggle to turn on/off sound."
 								}
@@ -845,7 +1010,7 @@
 									"orientation" : 1,
 									"outlettype" : [ "signal", "signal", "", "float", "list" ],
 									"parameter_enable" : 1,
-									"patching_rect" : [ 79.75, 282.0, 136.0, 27.0 ],
+									"patching_rect" : [ 79.75, 282.0, 136.0, 41.0 ],
 									"presentation_rect" : [ 105.0, 105.0, 50.0, 27.0 ],
 									"saved_attribute_attributes" : 									{
 										"valueof" : 										{
@@ -951,6 +1116,20 @@
 							}
 , 							{
 								"patchline" : 								{
+									"destination" : [ "obj-139", 0 ],
+									"source" : [ "obj-138", 0 ]
+								}
+
+							}
+, 							{
+								"patchline" : 								{
+									"destination" : [ "obj-124", 0 ],
+									"source" : [ "obj-139", 0 ]
+								}
+
+							}
+, 							{
+								"patchline" : 								{
 									"destination" : [ "obj-43", 0 ],
 									"source" : [ "obj-18", 0 ]
 								}
@@ -967,6 +1146,13 @@
 								"patchline" : 								{
 									"destination" : [ "obj-34", 0 ],
 									"source" : [ "obj-26", 0 ]
+								}
+
+							}
+, 							{
+								"patchline" : 								{
+									"destination" : [ "obj-138", 0 ],
+									"source" : [ "obj-3", 0 ]
 								}
 
 							}
@@ -1047,7 +1233,7 @@
 					"color" : [ 0.113339, 0.606332, 0.609597, 1.0 ],
 					"id" : "obj-134",
 					"maxclass" : "newobj",
-					"numinlets" : 3,
+					"numinlets" : 4,
 					"numoutlets" : 0,
 					"patcher" : 					{
 						"fileversion" : 1,
@@ -1088,6 +1274,47 @@
 						"subpatcher_template" : "",
 						"boxes" : [ 							{
 								"box" : 								{
+									"id" : "obj-139",
+									"maxclass" : "newobj",
+									"numinlets" : 6,
+									"numoutlets" : 1,
+									"outlettype" : [ "" ],
+									"patching_rect" : [ 333.0, 148.0, 113.0, 22.0 ],
+									"style" : "",
+									"text" : "scale 0. 200. -70. 0"
+								}
+
+							}
+, 							{
+								"box" : 								{
+									"format" : 6,
+									"id" : "obj-138",
+									"maxclass" : "flonum",
+									"numinlets" : 1,
+									"numoutlets" : 2,
+									"outlettype" : [ "", "bang" ],
+									"parameter_enable" : 0,
+									"patching_rect" : [ 333.0, 116.0, 50.0, 22.0 ],
+									"style" : ""
+								}
+
+							}
+, 							{
+								"box" : 								{
+									"comment" : "",
+									"id" : "obj-3",
+									"index" : 4,
+									"maxclass" : "inlet",
+									"numinlets" : 0,
+									"numoutlets" : 1,
+									"outlettype" : [ "" ],
+									"patching_rect" : [ 290.0, 38.0, 30.0, 30.0 ],
+									"style" : ""
+								}
+
+							}
+, 							{
+								"box" : 								{
 									"comment" : "",
 									"id" : "obj-6",
 									"index" : 3,
@@ -1095,7 +1322,7 @@
 									"numinlets" : 0,
 									"numoutlets" : 1,
 									"outlettype" : [ "int" ],
-									"patching_rect" : [ 340.75, 54.0, 30.0, 30.0 ],
+									"patching_rect" : [ 220.75, 40.0, 30.0, 30.0 ],
 									"style" : ""
 								}
 
@@ -1107,7 +1334,7 @@
 									"maxclass" : "comment",
 									"numinlets" : 1,
 									"numoutlets" : 0,
-									"patching_rect" : [ 391.0, 40.0, 222.0, 75.0 ],
+									"patching_rect" : [ 391.0, 40.0, 223.0, 75.0 ],
 									"style" : "",
 									"text" : "Name: PlaySound\nDescription: First inlet takes 0 (off) or 1 (on), second takes the name of a sound file, third takes a trigger/toggle to turn on/off sound."
 								}
@@ -1176,7 +1403,7 @@
 									"orientation" : 1,
 									"outlettype" : [ "signal", "signal", "", "float", "list" ],
 									"parameter_enable" : 1,
-									"patching_rect" : [ 79.75, 282.0, 136.0, 27.0 ],
+									"patching_rect" : [ 79.75, 282.0, 136.0, 41.0 ],
 									"presentation_rect" : [ 105.0, 105.0, 50.0, 27.0 ],
 									"saved_attribute_attributes" : 									{
 										"valueof" : 										{
@@ -1282,6 +1509,20 @@
 							}
 , 							{
 								"patchline" : 								{
+									"destination" : [ "obj-139", 0 ],
+									"source" : [ "obj-138", 0 ]
+								}
+
+							}
+, 							{
+								"patchline" : 								{
+									"destination" : [ "obj-124", 0 ],
+									"source" : [ "obj-139", 0 ]
+								}
+
+							}
+, 							{
+								"patchline" : 								{
 									"destination" : [ "obj-43", 0 ],
 									"source" : [ "obj-18", 0 ]
 								}
@@ -1298,6 +1539,13 @@
 								"patchline" : 								{
 									"destination" : [ "obj-34", 0 ],
 									"source" : [ "obj-26", 0 ]
+								}
+
+							}
+, 							{
+								"patchline" : 								{
+									"destination" : [ "obj-138", 0 ],
+									"source" : [ "obj-3", 0 ]
 								}
 
 							}
@@ -1378,7 +1626,7 @@
 					"color" : [ 0.113339, 0.606332, 0.609597, 1.0 ],
 					"id" : "obj-136",
 					"maxclass" : "newobj",
-					"numinlets" : 3,
+					"numinlets" : 4,
 					"numoutlets" : 0,
 					"patcher" : 					{
 						"fileversion" : 1,
@@ -1419,6 +1667,47 @@
 						"subpatcher_template" : "",
 						"boxes" : [ 							{
 								"box" : 								{
+									"id" : "obj-139",
+									"maxclass" : "newobj",
+									"numinlets" : 6,
+									"numoutlets" : 1,
+									"outlettype" : [ "" ],
+									"patching_rect" : [ 333.0, 154.0, 113.0, 22.0 ],
+									"style" : "",
+									"text" : "scale 0. 200. -70. 0"
+								}
+
+							}
+, 							{
+								"box" : 								{
+									"format" : 6,
+									"id" : "obj-138",
+									"maxclass" : "flonum",
+									"numinlets" : 1,
+									"numoutlets" : 2,
+									"outlettype" : [ "", "bang" ],
+									"parameter_enable" : 0,
+									"patching_rect" : [ 333.0, 122.0, 50.0, 22.0 ],
+									"style" : ""
+								}
+
+							}
+, 							{
+								"box" : 								{
+									"comment" : "",
+									"id" : "obj-3",
+									"index" : 4,
+									"maxclass" : "inlet",
+									"numinlets" : 0,
+									"numoutlets" : 1,
+									"outlettype" : [ "" ],
+									"patching_rect" : [ 290.0, 44.0, 30.0, 30.0 ],
+									"style" : ""
+								}
+
+							}
+, 							{
+								"box" : 								{
 									"comment" : "",
 									"id" : "obj-6",
 									"index" : 3,
@@ -1426,7 +1715,7 @@
 									"numinlets" : 0,
 									"numoutlets" : 1,
 									"outlettype" : [ "int" ],
-									"patching_rect" : [ 340.75, 54.0, 30.0, 30.0 ],
+									"patching_rect" : [ 222.75, 40.0, 30.0, 30.0 ],
 									"style" : ""
 								}
 
@@ -1438,7 +1727,7 @@
 									"maxclass" : "comment",
 									"numinlets" : 1,
 									"numoutlets" : 0,
-									"patching_rect" : [ 391.0, 40.0, 222.0, 75.0 ],
+									"patching_rect" : [ 391.0, 40.0, 223.0, 75.0 ],
 									"style" : "",
 									"text" : "Name: PlaySound\nDescription: First inlet takes 0 (off) or 1 (on), second takes the name of a sound file, third takes a trigger/toggle to turn on/off sound."
 								}
@@ -1507,7 +1796,7 @@
 									"orientation" : 1,
 									"outlettype" : [ "signal", "signal", "", "float", "list" ],
 									"parameter_enable" : 1,
-									"patching_rect" : [ 79.75, 282.0, 136.0, 27.0 ],
+									"patching_rect" : [ 79.75, 282.0, 136.0, 41.0 ],
 									"presentation_rect" : [ 105.0, 105.0, 50.0, 27.0 ],
 									"saved_attribute_attributes" : 									{
 										"valueof" : 										{
@@ -1613,6 +1902,20 @@
 							}
 , 							{
 								"patchline" : 								{
+									"destination" : [ "obj-139", 0 ],
+									"source" : [ "obj-138", 0 ]
+								}
+
+							}
+, 							{
+								"patchline" : 								{
+									"destination" : [ "obj-124", 0 ],
+									"source" : [ "obj-139", 0 ]
+								}
+
+							}
+, 							{
+								"patchline" : 								{
 									"destination" : [ "obj-43", 0 ],
 									"source" : [ "obj-18", 0 ]
 								}
@@ -1629,6 +1932,13 @@
 								"patchline" : 								{
 									"destination" : [ "obj-34", 0 ],
 									"source" : [ "obj-26", 0 ]
+								}
+
+							}
+, 							{
+								"patchline" : 								{
+									"destination" : [ "obj-138", 0 ],
+									"source" : [ "obj-3", 0 ]
 								}
 
 							}
@@ -2848,14 +3158,13 @@
 , 			{
 				"box" : 				{
 					"id" : "obj-22",
-					"linecount" : 2,
 					"maxclass" : "message",
 					"numinlets" : 2,
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
-					"patching_rect" : [ 326.0, 123.0, 29.5, 36.0 ],
+					"patching_rect" : [ 326.0, 123.0, 29.5, 22.0 ],
 					"style" : "",
-					"text" : "bang"
+					"text" : "0.1"
 				}
 
 			}
@@ -2891,7 +3200,7 @@
 					"color" : [ 0.113339, 0.606332, 0.609597, 1.0 ],
 					"id" : "obj-76",
 					"maxclass" : "newobj",
-					"numinlets" : 3,
+					"numinlets" : 4,
 					"numoutlets" : 0,
 					"patcher" : 					{
 						"fileversion" : 1,
@@ -2932,6 +3241,47 @@
 						"subpatcher_template" : "",
 						"boxes" : [ 							{
 								"box" : 								{
+									"id" : "obj-139",
+									"maxclass" : "newobj",
+									"numinlets" : 6,
+									"numoutlets" : 1,
+									"outlettype" : [ "" ],
+									"patching_rect" : [ 315.0, 148.0, 113.0, 22.0 ],
+									"style" : "",
+									"text" : "scale 0. 200. -70. 0"
+								}
+
+							}
+, 							{
+								"box" : 								{
+									"format" : 6,
+									"id" : "obj-138",
+									"maxclass" : "flonum",
+									"numinlets" : 1,
+									"numoutlets" : 2,
+									"outlettype" : [ "", "bang" ],
+									"parameter_enable" : 0,
+									"patching_rect" : [ 315.0, 116.0, 50.0, 22.0 ],
+									"style" : ""
+								}
+
+							}
+, 							{
+								"box" : 								{
+									"comment" : "",
+									"id" : "obj-3",
+									"index" : 4,
+									"maxclass" : "inlet",
+									"numinlets" : 0,
+									"numoutlets" : 1,
+									"outlettype" : [ "" ],
+									"patching_rect" : [ 272.0, 38.0, 30.0, 30.0 ],
+									"style" : ""
+								}
+
+							}
+, 							{
+								"box" : 								{
 									"comment" : "",
 									"id" : "obj-6",
 									"index" : 3,
@@ -2939,7 +3289,7 @@
 									"numinlets" : 0,
 									"numoutlets" : 1,
 									"outlettype" : [ "int" ],
-									"patching_rect" : [ 340.75, 54.0, 30.0, 30.0 ],
+									"patching_rect" : [ 210.75, 40.0, 30.0, 30.0 ],
 									"style" : ""
 								}
 
@@ -2951,7 +3301,7 @@
 									"maxclass" : "comment",
 									"numinlets" : 1,
 									"numoutlets" : 0,
-									"patching_rect" : [ 391.0, 40.0, 222.0, 75.0 ],
+									"patching_rect" : [ 391.0, 40.0, 223.0, 75.0 ],
 									"style" : "",
 									"text" : "Name: PlaySound\nDescription: First inlet takes 0 (off) or 1 (on), second takes the name of a sound file, third takes a trigger/toggle to turn on/off sound."
 								}
@@ -3020,7 +3370,7 @@
 									"orientation" : 1,
 									"outlettype" : [ "signal", "signal", "", "float", "list" ],
 									"parameter_enable" : 1,
-									"patching_rect" : [ 79.75, 282.0, 136.0, 27.0 ],
+									"patching_rect" : [ 79.75, 282.0, 136.0, 41.0 ],
 									"presentation_rect" : [ 105.0, 105.0, 50.0, 27.0 ],
 									"saved_attribute_attributes" : 									{
 										"valueof" : 										{
@@ -3126,6 +3476,20 @@
 							}
 , 							{
 								"patchline" : 								{
+									"destination" : [ "obj-139", 0 ],
+									"source" : [ "obj-138", 0 ]
+								}
+
+							}
+, 							{
+								"patchline" : 								{
+									"destination" : [ "obj-124", 0 ],
+									"source" : [ "obj-139", 0 ]
+								}
+
+							}
+, 							{
+								"patchline" : 								{
 									"destination" : [ "obj-43", 0 ],
 									"source" : [ "obj-18", 0 ]
 								}
@@ -3142,6 +3506,13 @@
 								"patchline" : 								{
 									"destination" : [ "obj-34", 0 ],
 									"source" : [ "obj-26", 0 ]
+								}
+
+							}
+, 							{
+								"patchline" : 								{
+									"destination" : [ "obj-138", 0 ],
+									"source" : [ "obj-3", 0 ]
 								}
 
 							}
@@ -3222,7 +3593,7 @@
 					"color" : [ 0.113339, 0.606332, 0.609597, 1.0 ],
 					"id" : "obj-74",
 					"maxclass" : "newobj",
-					"numinlets" : 3,
+					"numinlets" : 4,
 					"numoutlets" : 0,
 					"patcher" : 					{
 						"fileversion" : 1,
@@ -3263,6 +3634,47 @@
 						"subpatcher_template" : "",
 						"boxes" : [ 							{
 								"box" : 								{
+									"id" : "obj-139",
+									"maxclass" : "newobj",
+									"numinlets" : 6,
+									"numoutlets" : 1,
+									"outlettype" : [ "" ],
+									"patching_rect" : [ 323.0, 152.0, 113.0, 22.0 ],
+									"style" : "",
+									"text" : "scale 0. 200. -70. 0"
+								}
+
+							}
+, 							{
+								"box" : 								{
+									"format" : 6,
+									"id" : "obj-138",
+									"maxclass" : "flonum",
+									"numinlets" : 1,
+									"numoutlets" : 2,
+									"outlettype" : [ "", "bang" ],
+									"parameter_enable" : 0,
+									"patching_rect" : [ 323.0, 120.0, 50.0, 22.0 ],
+									"style" : ""
+								}
+
+							}
+, 							{
+								"box" : 								{
+									"comment" : "",
+									"id" : "obj-3",
+									"index" : 4,
+									"maxclass" : "inlet",
+									"numinlets" : 0,
+									"numoutlets" : 1,
+									"outlettype" : [ "" ],
+									"patching_rect" : [ 280.0, 42.0, 30.0, 30.0 ],
+									"style" : ""
+								}
+
+							}
+, 							{
+								"box" : 								{
 									"comment" : "",
 									"id" : "obj-6",
 									"index" : 3,
@@ -3270,7 +3682,7 @@
 									"numinlets" : 0,
 									"numoutlets" : 1,
 									"outlettype" : [ "int" ],
-									"patching_rect" : [ 340.75, 54.0, 30.0, 30.0 ],
+									"patching_rect" : [ 197.75, 40.0, 30.0, 30.0 ],
 									"style" : ""
 								}
 
@@ -3282,7 +3694,7 @@
 									"maxclass" : "comment",
 									"numinlets" : 1,
 									"numoutlets" : 0,
-									"patching_rect" : [ 391.0, 40.0, 222.0, 75.0 ],
+									"patching_rect" : [ 391.0, 40.0, 223.0, 75.0 ],
 									"style" : "",
 									"text" : "Name: PlaySound\nDescription: First inlet takes 0 (off) or 1 (on), second takes the name of a sound file, third takes a trigger/toggle to turn on/off sound."
 								}
@@ -3351,7 +3763,7 @@
 									"orientation" : 1,
 									"outlettype" : [ "signal", "signal", "", "float", "list" ],
 									"parameter_enable" : 1,
-									"patching_rect" : [ 79.75, 282.0, 136.0, 27.0 ],
+									"patching_rect" : [ 79.75, 282.0, 136.0, 41.0 ],
 									"presentation_rect" : [ 105.0, 105.0, 50.0, 27.0 ],
 									"saved_attribute_attributes" : 									{
 										"valueof" : 										{
@@ -3457,6 +3869,20 @@
 							}
 , 							{
 								"patchline" : 								{
+									"destination" : [ "obj-139", 0 ],
+									"source" : [ "obj-138", 0 ]
+								}
+
+							}
+, 							{
+								"patchline" : 								{
+									"destination" : [ "obj-124", 0 ],
+									"source" : [ "obj-139", 0 ]
+								}
+
+							}
+, 							{
+								"patchline" : 								{
 									"destination" : [ "obj-43", 0 ],
 									"source" : [ "obj-18", 0 ]
 								}
@@ -3473,6 +3899,13 @@
 								"patchline" : 								{
 									"destination" : [ "obj-34", 0 ],
 									"source" : [ "obj-26", 0 ]
+								}
+
+							}
+, 							{
+								"patchline" : 								{
+									"destination" : [ "obj-138", 0 ],
+									"source" : [ "obj-3", 0 ]
 								}
 
 							}
@@ -3553,7 +3986,7 @@
 					"color" : [ 0.113339, 0.606332, 0.609597, 1.0 ],
 					"id" : "obj-72",
 					"maxclass" : "newobj",
-					"numinlets" : 3,
+					"numinlets" : 4,
 					"numoutlets" : 0,
 					"patcher" : 					{
 						"fileversion" : 1,
@@ -3594,6 +4027,47 @@
 						"subpatcher_template" : "",
 						"boxes" : [ 							{
 								"box" : 								{
+									"id" : "obj-139",
+									"maxclass" : "newobj",
+									"numinlets" : 6,
+									"numoutlets" : 1,
+									"outlettype" : [ "" ],
+									"patching_rect" : [ 329.0, 156.0, 113.0, 22.0 ],
+									"style" : "",
+									"text" : "scale 0. 200. -70. 0"
+								}
+
+							}
+, 							{
+								"box" : 								{
+									"format" : 6,
+									"id" : "obj-138",
+									"maxclass" : "flonum",
+									"numinlets" : 1,
+									"numoutlets" : 2,
+									"outlettype" : [ "", "bang" ],
+									"parameter_enable" : 0,
+									"patching_rect" : [ 329.0, 124.0, 50.0, 22.0 ],
+									"style" : ""
+								}
+
+							}
+, 							{
+								"box" : 								{
+									"comment" : "",
+									"id" : "obj-3",
+									"index" : 4,
+									"maxclass" : "inlet",
+									"numinlets" : 0,
+									"numoutlets" : 1,
+									"outlettype" : [ "" ],
+									"patching_rect" : [ 286.0, 46.0, 30.0, 30.0 ],
+									"style" : ""
+								}
+
+							}
+, 							{
+								"box" : 								{
 									"comment" : "",
 									"id" : "obj-6",
 									"index" : 3,
@@ -3601,7 +4075,7 @@
 									"numinlets" : 0,
 									"numoutlets" : 1,
 									"outlettype" : [ "int" ],
-									"patching_rect" : [ 340.75, 54.0, 30.0, 30.0 ],
+									"patching_rect" : [ 200.75, 46.0, 30.0, 30.0 ],
 									"style" : ""
 								}
 
@@ -3613,7 +4087,7 @@
 									"maxclass" : "comment",
 									"numinlets" : 1,
 									"numoutlets" : 0,
-									"patching_rect" : [ 391.0, 40.0, 222.0, 75.0 ],
+									"patching_rect" : [ 391.0, 40.0, 223.0, 75.0 ],
 									"style" : "",
 									"text" : "Name: PlaySound\nDescription: First inlet takes 0 (off) or 1 (on), second takes the name of a sound file, third takes a trigger/toggle to turn on/off sound."
 								}
@@ -3682,7 +4156,7 @@
 									"orientation" : 1,
 									"outlettype" : [ "signal", "signal", "", "float", "list" ],
 									"parameter_enable" : 1,
-									"patching_rect" : [ 79.75, 282.0, 136.0, 27.0 ],
+									"patching_rect" : [ 79.75, 282.0, 136.0, 41.0 ],
 									"presentation_rect" : [ 105.0, 105.0, 50.0, 27.0 ],
 									"saved_attribute_attributes" : 									{
 										"valueof" : 										{
@@ -3788,6 +4262,20 @@
 							}
 , 							{
 								"patchline" : 								{
+									"destination" : [ "obj-139", 0 ],
+									"source" : [ "obj-138", 0 ]
+								}
+
+							}
+, 							{
+								"patchline" : 								{
+									"destination" : [ "obj-124", 0 ],
+									"source" : [ "obj-139", 0 ]
+								}
+
+							}
+, 							{
+								"patchline" : 								{
 									"destination" : [ "obj-43", 0 ],
 									"source" : [ "obj-18", 0 ]
 								}
@@ -3804,6 +4292,13 @@
 								"patchline" : 								{
 									"destination" : [ "obj-34", 0 ],
 									"source" : [ "obj-26", 0 ]
+								}
+
+							}
+, 							{
+								"patchline" : 								{
+									"destination" : [ "obj-138", 0 ],
+									"source" : [ "obj-3", 0 ]
 								}
 
 							}
@@ -3884,7 +4379,7 @@
 					"color" : [ 0.113339, 0.606332, 0.609597, 1.0 ],
 					"id" : "obj-70",
 					"maxclass" : "newobj",
-					"numinlets" : 3,
+					"numinlets" : 4,
 					"numoutlets" : 0,
 					"patcher" : 					{
 						"fileversion" : 1,
@@ -3925,6 +4420,47 @@
 						"subpatcher_template" : "",
 						"boxes" : [ 							{
 								"box" : 								{
+									"id" : "obj-139",
+									"maxclass" : "newobj",
+									"numinlets" : 6,
+									"numoutlets" : 1,
+									"outlettype" : [ "" ],
+									"patching_rect" : [ 341.0, 152.0, 113.0, 22.0 ],
+									"style" : "",
+									"text" : "scale 0. 200. -70. 0"
+								}
+
+							}
+, 							{
+								"box" : 								{
+									"format" : 6,
+									"id" : "obj-138",
+									"maxclass" : "flonum",
+									"numinlets" : 1,
+									"numoutlets" : 2,
+									"outlettype" : [ "", "bang" ],
+									"parameter_enable" : 0,
+									"patching_rect" : [ 341.0, 120.0, 50.0, 22.0 ],
+									"style" : ""
+								}
+
+							}
+, 							{
+								"box" : 								{
+									"comment" : "",
+									"id" : "obj-3",
+									"index" : 4,
+									"maxclass" : "inlet",
+									"numinlets" : 0,
+									"numoutlets" : 1,
+									"outlettype" : [ "" ],
+									"patching_rect" : [ 298.0, 42.0, 30.0, 30.0 ],
+									"style" : ""
+								}
+
+							}
+, 							{
+								"box" : 								{
 									"comment" : "",
 									"id" : "obj-6",
 									"index" : 3,
@@ -3932,7 +4468,7 @@
 									"numinlets" : 0,
 									"numoutlets" : 1,
 									"outlettype" : [ "int" ],
-									"patching_rect" : [ 340.75, 54.0, 30.0, 30.0 ],
+									"patching_rect" : [ 240.75, 40.0, 30.0, 30.0 ],
 									"style" : ""
 								}
 
@@ -3944,7 +4480,7 @@
 									"maxclass" : "comment",
 									"numinlets" : 1,
 									"numoutlets" : 0,
-									"patching_rect" : [ 391.0, 40.0, 222.0, 75.0 ],
+									"patching_rect" : [ 391.0, 40.0, 223.0, 75.0 ],
 									"style" : "",
 									"text" : "Name: PlaySound\nDescription: First inlet takes 0 (off) or 1 (on), second takes the name of a sound file, third takes a trigger/toggle to turn on/off sound."
 								}
@@ -4013,7 +4549,7 @@
 									"orientation" : 1,
 									"outlettype" : [ "signal", "signal", "", "float", "list" ],
 									"parameter_enable" : 1,
-									"patching_rect" : [ 79.75, 282.0, 136.0, 27.0 ],
+									"patching_rect" : [ 79.75, 282.0, 136.0, 41.0 ],
 									"presentation_rect" : [ 105.0, 105.0, 50.0, 27.0 ],
 									"saved_attribute_attributes" : 									{
 										"valueof" : 										{
@@ -4119,6 +4655,20 @@
 							}
 , 							{
 								"patchline" : 								{
+									"destination" : [ "obj-139", 0 ],
+									"source" : [ "obj-138", 0 ]
+								}
+
+							}
+, 							{
+								"patchline" : 								{
+									"destination" : [ "obj-124", 0 ],
+									"source" : [ "obj-139", 0 ]
+								}
+
+							}
+, 							{
+								"patchline" : 								{
 									"destination" : [ "obj-43", 0 ],
 									"source" : [ "obj-18", 0 ]
 								}
@@ -4135,6 +4685,13 @@
 								"patchline" : 								{
 									"destination" : [ "obj-34", 0 ],
 									"source" : [ "obj-26", 0 ]
+								}
+
+							}
+, 							{
+								"patchline" : 								{
+									"destination" : [ "obj-138", 0 ],
+									"source" : [ "obj-3", 0 ]
 								}
 
 							}
@@ -4215,7 +4772,7 @@
 					"color" : [ 0.113339, 0.606332, 0.609597, 1.0 ],
 					"id" : "obj-68",
 					"maxclass" : "newobj",
-					"numinlets" : 3,
+					"numinlets" : 4,
 					"numoutlets" : 0,
 					"patcher" : 					{
 						"fileversion" : 1,
@@ -4256,6 +4813,47 @@
 						"subpatcher_template" : "",
 						"boxes" : [ 							{
 								"box" : 								{
+									"id" : "obj-139",
+									"maxclass" : "newobj",
+									"numinlets" : 6,
+									"numoutlets" : 1,
+									"outlettype" : [ "" ],
+									"patching_rect" : [ 357.0, 149.0, 113.0, 22.0 ],
+									"style" : "",
+									"text" : "scale 0. 200. -70. 0"
+								}
+
+							}
+, 							{
+								"box" : 								{
+									"format" : 6,
+									"id" : "obj-138",
+									"maxclass" : "flonum",
+									"numinlets" : 1,
+									"numoutlets" : 2,
+									"outlettype" : [ "", "bang" ],
+									"parameter_enable" : 0,
+									"patching_rect" : [ 357.0, 117.0, 50.0, 22.0 ],
+									"style" : ""
+								}
+
+							}
+, 							{
+								"box" : 								{
+									"comment" : "",
+									"id" : "obj-3",
+									"index" : 4,
+									"maxclass" : "inlet",
+									"numinlets" : 0,
+									"numoutlets" : 1,
+									"outlettype" : [ "" ],
+									"patching_rect" : [ 314.0, 39.0, 30.0, 30.0 ],
+									"style" : ""
+								}
+
+							}
+, 							{
+								"box" : 								{
 									"comment" : "",
 									"id" : "obj-6",
 									"index" : 3,
@@ -4263,7 +4861,7 @@
 									"numinlets" : 0,
 									"numoutlets" : 1,
 									"outlettype" : [ "int" ],
-									"patching_rect" : [ 340.75, 54.0, 30.0, 30.0 ],
+									"patching_rect" : [ 270.75, 40.0, 30.0, 30.0 ],
 									"style" : ""
 								}
 
@@ -4275,7 +4873,7 @@
 									"maxclass" : "comment",
 									"numinlets" : 1,
 									"numoutlets" : 0,
-									"patching_rect" : [ 391.0, 40.0, 222.0, 75.0 ],
+									"patching_rect" : [ 391.0, 40.0, 223.0, 75.0 ],
 									"style" : "",
 									"text" : "Name: PlaySound\nDescription: First inlet takes 0 (off) or 1 (on), second takes the name of a sound file, third takes a trigger/toggle to turn on/off sound."
 								}
@@ -4344,7 +4942,7 @@
 									"orientation" : 1,
 									"outlettype" : [ "signal", "signal", "", "float", "list" ],
 									"parameter_enable" : 1,
-									"patching_rect" : [ 79.75, 282.0, 136.0, 27.0 ],
+									"patching_rect" : [ 79.75, 282.0, 136.0, 41.0 ],
 									"presentation_rect" : [ 105.0, 105.0, 50.0, 27.0 ],
 									"saved_attribute_attributes" : 									{
 										"valueof" : 										{
@@ -4450,6 +5048,20 @@
 							}
 , 							{
 								"patchline" : 								{
+									"destination" : [ "obj-139", 0 ],
+									"source" : [ "obj-138", 0 ]
+								}
+
+							}
+, 							{
+								"patchline" : 								{
+									"destination" : [ "obj-124", 0 ],
+									"source" : [ "obj-139", 0 ]
+								}
+
+							}
+, 							{
+								"patchline" : 								{
 									"destination" : [ "obj-43", 0 ],
 									"source" : [ "obj-18", 0 ]
 								}
@@ -4466,6 +5078,13 @@
 								"patchline" : 								{
 									"destination" : [ "obj-34", 0 ],
 									"source" : [ "obj-26", 0 ]
+								}
+
+							}
+, 							{
+								"patchline" : 								{
+									"destination" : [ "obj-138", 0 ],
+									"source" : [ "obj-3", 0 ]
 								}
 
 							}
@@ -4546,7 +5165,7 @@
 					"color" : [ 0.113339, 0.606332, 0.609597, 1.0 ],
 					"id" : "obj-66",
 					"maxclass" : "newobj",
-					"numinlets" : 3,
+					"numinlets" : 4,
 					"numoutlets" : 0,
 					"patcher" : 					{
 						"fileversion" : 1,
@@ -4587,6 +5206,47 @@
 						"subpatcher_template" : "",
 						"boxes" : [ 							{
 								"box" : 								{
+									"id" : "obj-139",
+									"maxclass" : "newobj",
+									"numinlets" : 6,
+									"numoutlets" : 1,
+									"outlettype" : [ "" ],
+									"patching_rect" : [ 339.0, 149.0, 113.0, 22.0 ],
+									"style" : "",
+									"text" : "scale 0. 200. -70. 0"
+								}
+
+							}
+, 							{
+								"box" : 								{
+									"format" : 6,
+									"id" : "obj-138",
+									"maxclass" : "flonum",
+									"numinlets" : 1,
+									"numoutlets" : 2,
+									"outlettype" : [ "", "bang" ],
+									"parameter_enable" : 0,
+									"patching_rect" : [ 339.0, 117.0, 50.0, 22.0 ],
+									"style" : ""
+								}
+
+							}
+, 							{
+								"box" : 								{
+									"comment" : "",
+									"id" : "obj-3",
+									"index" : 4,
+									"maxclass" : "inlet",
+									"numinlets" : 0,
+									"numoutlets" : 1,
+									"outlettype" : [ "" ],
+									"patching_rect" : [ 296.0, 39.0, 30.0, 30.0 ],
+									"style" : ""
+								}
+
+							}
+, 							{
+								"box" : 								{
 									"comment" : "",
 									"id" : "obj-6",
 									"index" : 3,
@@ -4594,7 +5254,7 @@
 									"numinlets" : 0,
 									"numoutlets" : 1,
 									"outlettype" : [ "int" ],
-									"patching_rect" : [ 340.75, 54.0, 30.0, 30.0 ],
+									"patching_rect" : [ 236.75, 40.0, 30.0, 30.0 ],
 									"style" : ""
 								}
 
@@ -4606,7 +5266,7 @@
 									"maxclass" : "comment",
 									"numinlets" : 1,
 									"numoutlets" : 0,
-									"patching_rect" : [ 391.0, 40.0, 222.0, 75.0 ],
+									"patching_rect" : [ 391.0, 40.0, 223.0, 75.0 ],
 									"style" : "",
 									"text" : "Name: PlaySound\nDescription: First inlet takes 0 (off) or 1 (on), second takes the name of a sound file, third takes a trigger/toggle to turn on/off sound."
 								}
@@ -4675,7 +5335,7 @@
 									"orientation" : 1,
 									"outlettype" : [ "signal", "signal", "", "float", "list" ],
 									"parameter_enable" : 1,
-									"patching_rect" : [ 79.75, 282.0, 136.0, 27.0 ],
+									"patching_rect" : [ 79.75, 282.0, 136.0, 41.0 ],
 									"presentation_rect" : [ 105.0, 105.0, 50.0, 27.0 ],
 									"saved_attribute_attributes" : 									{
 										"valueof" : 										{
@@ -4781,6 +5441,20 @@
 							}
 , 							{
 								"patchline" : 								{
+									"destination" : [ "obj-139", 0 ],
+									"source" : [ "obj-138", 0 ]
+								}
+
+							}
+, 							{
+								"patchline" : 								{
+									"destination" : [ "obj-124", 0 ],
+									"source" : [ "obj-139", 0 ]
+								}
+
+							}
+, 							{
+								"patchline" : 								{
 									"destination" : [ "obj-43", 0 ],
 									"source" : [ "obj-18", 0 ]
 								}
@@ -4797,6 +5471,13 @@
 								"patchline" : 								{
 									"destination" : [ "obj-34", 0 ],
 									"source" : [ "obj-26", 0 ]
+								}
+
+							}
+, 							{
+								"patchline" : 								{
+									"destination" : [ "obj-138", 0 ],
+									"source" : [ "obj-3", 0 ]
 								}
 
 							}
@@ -4877,7 +5558,7 @@
 					"color" : [ 0.113339, 0.606332, 0.609597, 1.0 ],
 					"id" : "obj-64",
 					"maxclass" : "newobj",
-					"numinlets" : 3,
+					"numinlets" : 4,
 					"numoutlets" : 0,
 					"patcher" : 					{
 						"fileversion" : 1,
@@ -4918,6 +5599,47 @@
 						"subpatcher_template" : "",
 						"boxes" : [ 							{
 								"box" : 								{
+									"id" : "obj-139",
+									"maxclass" : "newobj",
+									"numinlets" : 6,
+									"numoutlets" : 1,
+									"outlettype" : [ "" ],
+									"patching_rect" : [ 323.0, 155.0, 113.0, 22.0 ],
+									"style" : "",
+									"text" : "scale 0. 200. -70. 0"
+								}
+
+							}
+, 							{
+								"box" : 								{
+									"format" : 6,
+									"id" : "obj-138",
+									"maxclass" : "flonum",
+									"numinlets" : 1,
+									"numoutlets" : 2,
+									"outlettype" : [ "", "bang" ],
+									"parameter_enable" : 0,
+									"patching_rect" : [ 323.0, 123.0, 50.0, 22.0 ],
+									"style" : ""
+								}
+
+							}
+, 							{
+								"box" : 								{
+									"comment" : "",
+									"id" : "obj-3",
+									"index" : 4,
+									"maxclass" : "inlet",
+									"numinlets" : 0,
+									"numoutlets" : 1,
+									"outlettype" : [ "" ],
+									"patching_rect" : [ 280.0, 45.0, 30.0, 30.0 ],
+									"style" : ""
+								}
+
+							}
+, 							{
+								"box" : 								{
 									"comment" : "",
 									"id" : "obj-6",
 									"index" : 3,
@@ -4925,7 +5647,7 @@
 									"numinlets" : 0,
 									"numoutlets" : 1,
 									"outlettype" : [ "int" ],
-									"patching_rect" : [ 340.75, 54.0, 30.0, 30.0 ],
+									"patching_rect" : [ 214.75, 40.0, 30.0, 30.0 ],
 									"style" : ""
 								}
 
@@ -4937,7 +5659,7 @@
 									"maxclass" : "comment",
 									"numinlets" : 1,
 									"numoutlets" : 0,
-									"patching_rect" : [ 391.0, 40.0, 222.0, 75.0 ],
+									"patching_rect" : [ 391.0, 40.0, 223.0, 75.0 ],
 									"style" : "",
 									"text" : "Name: PlaySound\nDescription: First inlet takes 0 (off) or 1 (on), second takes the name of a sound file, third takes a trigger/toggle to turn on/off sound."
 								}
@@ -5006,7 +5728,7 @@
 									"orientation" : 1,
 									"outlettype" : [ "signal", "signal", "", "float", "list" ],
 									"parameter_enable" : 1,
-									"patching_rect" : [ 79.75, 282.0, 136.0, 27.0 ],
+									"patching_rect" : [ 79.75, 282.0, 136.0, 41.0 ],
 									"presentation_rect" : [ 105.0, 105.0, 50.0, 27.0 ],
 									"saved_attribute_attributes" : 									{
 										"valueof" : 										{
@@ -5112,6 +5834,20 @@
 							}
 , 							{
 								"patchline" : 								{
+									"destination" : [ "obj-139", 0 ],
+									"source" : [ "obj-138", 0 ]
+								}
+
+							}
+, 							{
+								"patchline" : 								{
+									"destination" : [ "obj-124", 0 ],
+									"source" : [ "obj-139", 0 ]
+								}
+
+							}
+, 							{
+								"patchline" : 								{
 									"destination" : [ "obj-43", 0 ],
 									"source" : [ "obj-18", 0 ]
 								}
@@ -5128,6 +5864,13 @@
 								"patchline" : 								{
 									"destination" : [ "obj-34", 0 ],
 									"source" : [ "obj-26", 0 ]
+								}
+
+							}
+, 							{
+								"patchline" : 								{
+									"destination" : [ "obj-138", 0 ],
+									"source" : [ "obj-3", 0 ]
 								}
 
 							}
@@ -5221,7 +5964,7 @@
 					"color" : [ 0.113339, 0.606332, 0.609597, 1.0 ],
 					"id" : "obj-61",
 					"maxclass" : "newobj",
-					"numinlets" : 3,
+					"numinlets" : 4,
 					"numoutlets" : 0,
 					"patcher" : 					{
 						"fileversion" : 1,
@@ -5262,6 +6005,47 @@
 						"subpatcher_template" : "",
 						"boxes" : [ 							{
 								"box" : 								{
+									"id" : "obj-139",
+									"maxclass" : "newobj",
+									"numinlets" : 6,
+									"numoutlets" : 1,
+									"outlettype" : [ "" ],
+									"patching_rect" : [ 345.0, 155.0, 113.0, 22.0 ],
+									"style" : "",
+									"text" : "scale 0. 200. -70. 0"
+								}
+
+							}
+, 							{
+								"box" : 								{
+									"format" : 6,
+									"id" : "obj-138",
+									"maxclass" : "flonum",
+									"numinlets" : 1,
+									"numoutlets" : 2,
+									"outlettype" : [ "", "bang" ],
+									"parameter_enable" : 0,
+									"patching_rect" : [ 345.0, 123.0, 50.0, 22.0 ],
+									"style" : ""
+								}
+
+							}
+, 							{
+								"box" : 								{
+									"comment" : "",
+									"id" : "obj-3",
+									"index" : 4,
+									"maxclass" : "inlet",
+									"numinlets" : 0,
+									"numoutlets" : 1,
+									"outlettype" : [ "" ],
+									"patching_rect" : [ 302.0, 45.0, 30.0, 30.0 ],
+									"style" : ""
+								}
+
+							}
+, 							{
+								"box" : 								{
 									"comment" : "",
 									"id" : "obj-6",
 									"index" : 3,
@@ -5269,7 +6053,7 @@
 									"numinlets" : 0,
 									"numoutlets" : 1,
 									"outlettype" : [ "int" ],
-									"patching_rect" : [ 340.75, 54.0, 30.0, 30.0 ],
+									"patching_rect" : [ 240.75, 47.0, 30.0, 30.0 ],
 									"style" : ""
 								}
 
@@ -5281,7 +6065,7 @@
 									"maxclass" : "comment",
 									"numinlets" : 1,
 									"numoutlets" : 0,
-									"patching_rect" : [ 391.0, 40.0, 222.0, 75.0 ],
+									"patching_rect" : [ 391.0, 40.0, 223.0, 75.0 ],
 									"style" : "",
 									"text" : "Name: PlaySound\nDescription: First inlet takes 0 (off) or 1 (on), second takes the name of a sound file, third takes a trigger/toggle to turn on/off sound."
 								}
@@ -5350,7 +6134,7 @@
 									"orientation" : 1,
 									"outlettype" : [ "signal", "signal", "", "float", "list" ],
 									"parameter_enable" : 1,
-									"patching_rect" : [ 79.75, 282.0, 136.0, 27.0 ],
+									"patching_rect" : [ 79.75, 282.0, 136.0, 41.0 ],
 									"presentation_rect" : [ 105.0, 105.0, 50.0, 27.0 ],
 									"saved_attribute_attributes" : 									{
 										"valueof" : 										{
@@ -5456,6 +6240,20 @@
 							}
 , 							{
 								"patchline" : 								{
+									"destination" : [ "obj-139", 0 ],
+									"source" : [ "obj-138", 0 ]
+								}
+
+							}
+, 							{
+								"patchline" : 								{
+									"destination" : [ "obj-124", 0 ],
+									"source" : [ "obj-139", 0 ]
+								}
+
+							}
+, 							{
+								"patchline" : 								{
 									"destination" : [ "obj-43", 0 ],
 									"source" : [ "obj-18", 0 ]
 								}
@@ -5472,6 +6270,13 @@
 								"patchline" : 								{
 									"destination" : [ "obj-34", 0 ],
 									"source" : [ "obj-26", 0 ]
+								}
+
+							}
+, 							{
+								"patchline" : 								{
+									"destination" : [ "obj-138", 0 ],
+									"source" : [ "obj-3", 0 ]
 								}
 
 							}
@@ -5552,7 +6357,7 @@
 					"color" : [ 0.113339, 0.606332, 0.609597, 1.0 ],
 					"id" : "obj-59",
 					"maxclass" : "newobj",
-					"numinlets" : 3,
+					"numinlets" : 4,
 					"numoutlets" : 0,
 					"patcher" : 					{
 						"fileversion" : 1,
@@ -5593,6 +6398,47 @@
 						"subpatcher_template" : "",
 						"boxes" : [ 							{
 								"box" : 								{
+									"id" : "obj-139",
+									"maxclass" : "newobj",
+									"numinlets" : 6,
+									"numoutlets" : 1,
+									"outlettype" : [ "" ],
+									"patching_rect" : [ 358.0, 153.0, 113.0, 22.0 ],
+									"style" : "",
+									"text" : "scale 0. 200. -70. 0"
+								}
+
+							}
+, 							{
+								"box" : 								{
+									"format" : 6,
+									"id" : "obj-138",
+									"maxclass" : "flonum",
+									"numinlets" : 1,
+									"numoutlets" : 2,
+									"outlettype" : [ "", "bang" ],
+									"parameter_enable" : 0,
+									"patching_rect" : [ 358.0, 121.0, 50.0, 22.0 ],
+									"style" : ""
+								}
+
+							}
+, 							{
+								"box" : 								{
+									"comment" : "",
+									"id" : "obj-3",
+									"index" : 4,
+									"maxclass" : "inlet",
+									"numinlets" : 0,
+									"numoutlets" : 1,
+									"outlettype" : [ "" ],
+									"patching_rect" : [ 315.0, 43.0, 30.0, 30.0 ],
+									"style" : ""
+								}
+
+							}
+, 							{
+								"box" : 								{
 									"comment" : "",
 									"id" : "obj-6",
 									"index" : 3,
@@ -5600,7 +6446,7 @@
 									"numinlets" : 0,
 									"numoutlets" : 1,
 									"outlettype" : [ "int" ],
-									"patching_rect" : [ 340.75, 54.0, 30.0, 30.0 ],
+									"patching_rect" : [ 236.75, 40.0, 30.0, 30.0 ],
 									"style" : ""
 								}
 
@@ -5612,7 +6458,7 @@
 									"maxclass" : "comment",
 									"numinlets" : 1,
 									"numoutlets" : 0,
-									"patching_rect" : [ 391.0, 40.0, 222.0, 75.0 ],
+									"patching_rect" : [ 391.0, 40.0, 223.0, 75.0 ],
 									"style" : "",
 									"text" : "Name: PlaySound\nDescription: First inlet takes 0 (off) or 1 (on), second takes the name of a sound file, third takes a trigger/toggle to turn on/off sound."
 								}
@@ -5681,7 +6527,7 @@
 									"orientation" : 1,
 									"outlettype" : [ "signal", "signal", "", "float", "list" ],
 									"parameter_enable" : 1,
-									"patching_rect" : [ 79.75, 282.0, 136.0, 27.0 ],
+									"patching_rect" : [ 79.75, 282.0, 136.0, 41.0 ],
 									"presentation_rect" : [ 105.0, 105.0, 50.0, 27.0 ],
 									"saved_attribute_attributes" : 									{
 										"valueof" : 										{
@@ -5787,6 +6633,20 @@
 							}
 , 							{
 								"patchline" : 								{
+									"destination" : [ "obj-139", 0 ],
+									"source" : [ "obj-138", 0 ]
+								}
+
+							}
+, 							{
+								"patchline" : 								{
+									"destination" : [ "obj-124", 0 ],
+									"source" : [ "obj-139", 0 ]
+								}
+
+							}
+, 							{
+								"patchline" : 								{
 									"destination" : [ "obj-43", 0 ],
 									"source" : [ "obj-18", 0 ]
 								}
@@ -5803,6 +6663,13 @@
 								"patchline" : 								{
 									"destination" : [ "obj-34", 0 ],
 									"source" : [ "obj-26", 0 ]
+								}
+
+							}
+, 							{
+								"patchline" : 								{
+									"destination" : [ "obj-138", 0 ],
+									"source" : [ "obj-3", 0 ]
 								}
 
 							}
@@ -5883,7 +6750,7 @@
 					"color" : [ 0.113339, 0.606332, 0.609597, 1.0 ],
 					"id" : "obj-57",
 					"maxclass" : "newobj",
-					"numinlets" : 3,
+					"numinlets" : 4,
 					"numoutlets" : 0,
 					"patcher" : 					{
 						"fileversion" : 1,
@@ -5924,6 +6791,47 @@
 						"subpatcher_template" : "",
 						"boxes" : [ 							{
 								"box" : 								{
+									"id" : "obj-139",
+									"maxclass" : "newobj",
+									"numinlets" : 6,
+									"numoutlets" : 1,
+									"outlettype" : [ "" ],
+									"patching_rect" : [ 338.0, 155.0, 113.0, 22.0 ],
+									"style" : "",
+									"text" : "scale 0. 200. -70. 0"
+								}
+
+							}
+, 							{
+								"box" : 								{
+									"format" : 6,
+									"id" : "obj-138",
+									"maxclass" : "flonum",
+									"numinlets" : 1,
+									"numoutlets" : 2,
+									"outlettype" : [ "", "bang" ],
+									"parameter_enable" : 0,
+									"patching_rect" : [ 338.0, 123.0, 50.0, 22.0 ],
+									"style" : ""
+								}
+
+							}
+, 							{
+								"box" : 								{
+									"comment" : "",
+									"id" : "obj-3",
+									"index" : 4,
+									"maxclass" : "inlet",
+									"numinlets" : 0,
+									"numoutlets" : 1,
+									"outlettype" : [ "" ],
+									"patching_rect" : [ 295.0, 45.0, 30.0, 30.0 ],
+									"style" : ""
+								}
+
+							}
+, 							{
+								"box" : 								{
 									"comment" : "",
 									"id" : "obj-6",
 									"index" : 3,
@@ -5931,7 +6839,7 @@
 									"numinlets" : 0,
 									"numoutlets" : 1,
 									"outlettype" : [ "int" ],
-									"patching_rect" : [ 340.75, 54.0, 30.0, 30.0 ],
+									"patching_rect" : [ 205.75, 45.0, 30.0, 30.0 ],
 									"style" : ""
 								}
 
@@ -5943,7 +6851,7 @@
 									"maxclass" : "comment",
 									"numinlets" : 1,
 									"numoutlets" : 0,
-									"patching_rect" : [ 391.0, 40.0, 222.0, 75.0 ],
+									"patching_rect" : [ 391.0, 40.0, 223.0, 75.0 ],
 									"style" : "",
 									"text" : "Name: PlaySound\nDescription: First inlet takes 0 (off) or 1 (on), second takes the name of a sound file, third takes a trigger/toggle to turn on/off sound."
 								}
@@ -6012,7 +6920,7 @@
 									"orientation" : 1,
 									"outlettype" : [ "signal", "signal", "", "float", "list" ],
 									"parameter_enable" : 1,
-									"patching_rect" : [ 79.75, 282.0, 136.0, 27.0 ],
+									"patching_rect" : [ 79.75, 282.0, 136.0, 41.0 ],
 									"presentation_rect" : [ 105.0, 105.0, 50.0, 27.0 ],
 									"saved_attribute_attributes" : 									{
 										"valueof" : 										{
@@ -6118,6 +7026,20 @@
 							}
 , 							{
 								"patchline" : 								{
+									"destination" : [ "obj-139", 0 ],
+									"source" : [ "obj-138", 0 ]
+								}
+
+							}
+, 							{
+								"patchline" : 								{
+									"destination" : [ "obj-124", 0 ],
+									"source" : [ "obj-139", 0 ]
+								}
+
+							}
+, 							{
+								"patchline" : 								{
 									"destination" : [ "obj-43", 0 ],
 									"source" : [ "obj-18", 0 ]
 								}
@@ -6134,6 +7056,13 @@
 								"patchline" : 								{
 									"destination" : [ "obj-34", 0 ],
 									"source" : [ "obj-26", 0 ]
+								}
+
+							}
+, 							{
+								"patchline" : 								{
+									"destination" : [ "obj-138", 0 ],
+									"source" : [ "obj-3", 0 ]
 								}
 
 							}
@@ -6214,7 +7143,7 @@
 					"color" : [ 0.113339, 0.606332, 0.609597, 1.0 ],
 					"id" : "obj-51",
 					"maxclass" : "newobj",
-					"numinlets" : 3,
+					"numinlets" : 4,
 					"numoutlets" : 0,
 					"patcher" : 					{
 						"fileversion" : 1,
@@ -6255,6 +7184,47 @@
 						"subpatcher_template" : "",
 						"boxes" : [ 							{
 								"box" : 								{
+									"id" : "obj-139",
+									"maxclass" : "newobj",
+									"numinlets" : 6,
+									"numoutlets" : 1,
+									"outlettype" : [ "" ],
+									"patching_rect" : [ 329.0, 155.0, 113.0, 22.0 ],
+									"style" : "",
+									"text" : "scale 0. 200. -70. 0"
+								}
+
+							}
+, 							{
+								"box" : 								{
+									"format" : 6,
+									"id" : "obj-138",
+									"maxclass" : "flonum",
+									"numinlets" : 1,
+									"numoutlets" : 2,
+									"outlettype" : [ "", "bang" ],
+									"parameter_enable" : 0,
+									"patching_rect" : [ 329.0, 123.0, 50.0, 22.0 ],
+									"style" : ""
+								}
+
+							}
+, 							{
+								"box" : 								{
+									"comment" : "",
+									"id" : "obj-3",
+									"index" : 4,
+									"maxclass" : "inlet",
+									"numinlets" : 0,
+									"numoutlets" : 1,
+									"outlettype" : [ "" ],
+									"patching_rect" : [ 286.0, 45.0, 30.0, 30.0 ],
+									"style" : ""
+								}
+
+							}
+, 							{
+								"box" : 								{
 									"comment" : "",
 									"id" : "obj-6",
 									"index" : 3,
@@ -6262,7 +7232,7 @@
 									"numinlets" : 0,
 									"numoutlets" : 1,
 									"outlettype" : [ "int" ],
-									"patching_rect" : [ 340.75, 54.0, 30.0, 30.0 ],
+									"patching_rect" : [ 205.75, 45.0, 30.0, 30.0 ],
 									"style" : ""
 								}
 
@@ -6274,7 +7244,7 @@
 									"maxclass" : "comment",
 									"numinlets" : 1,
 									"numoutlets" : 0,
-									"patching_rect" : [ 391.0, 40.0, 222.0, 75.0 ],
+									"patching_rect" : [ 391.0, 40.0, 223.0, 75.0 ],
 									"style" : "",
 									"text" : "Name: PlaySound\nDescription: First inlet takes 0 (off) or 1 (on), second takes the name of a sound file, third takes a trigger/toggle to turn on/off sound."
 								}
@@ -6343,7 +7313,7 @@
 									"orientation" : 1,
 									"outlettype" : [ "signal", "signal", "", "float", "list" ],
 									"parameter_enable" : 1,
-									"patching_rect" : [ 79.75, 282.0, 136.0, 27.0 ],
+									"patching_rect" : [ 79.75, 282.0, 136.0, 41.0 ],
 									"presentation_rect" : [ 105.0, 105.0, 50.0, 27.0 ],
 									"saved_attribute_attributes" : 									{
 										"valueof" : 										{
@@ -6449,6 +7419,20 @@
 							}
 , 							{
 								"patchline" : 								{
+									"destination" : [ "obj-139", 0 ],
+									"source" : [ "obj-138", 0 ]
+								}
+
+							}
+, 							{
+								"patchline" : 								{
+									"destination" : [ "obj-124", 0 ],
+									"source" : [ "obj-139", 0 ]
+								}
+
+							}
+, 							{
+								"patchline" : 								{
 									"destination" : [ "obj-43", 0 ],
 									"source" : [ "obj-18", 0 ]
 								}
@@ -6465,6 +7449,13 @@
 								"patchline" : 								{
 									"destination" : [ "obj-34", 0 ],
 									"source" : [ "obj-26", 0 ]
+								}
+
+							}
+, 							{
+								"patchline" : 								{
+									"destination" : [ "obj-138", 0 ],
+									"source" : [ "obj-3", 0 ]
 								}
 
 							}
@@ -6545,7 +7536,7 @@
 					"color" : [ 0.113339, 0.606332, 0.609597, 1.0 ],
 					"id" : "obj-49",
 					"maxclass" : "newobj",
-					"numinlets" : 3,
+					"numinlets" : 4,
 					"numoutlets" : 0,
 					"patcher" : 					{
 						"fileversion" : 1,
@@ -6586,6 +7577,47 @@
 						"subpatcher_template" : "",
 						"boxes" : [ 							{
 								"box" : 								{
+									"id" : "obj-139",
+									"maxclass" : "newobj",
+									"numinlets" : 6,
+									"numoutlets" : 1,
+									"outlettype" : [ "" ],
+									"patching_rect" : [ 333.0, 149.0, 113.0, 22.0 ],
+									"style" : "",
+									"text" : "scale 0. 200. -70. 0"
+								}
+
+							}
+, 							{
+								"box" : 								{
+									"format" : 6,
+									"id" : "obj-138",
+									"maxclass" : "flonum",
+									"numinlets" : 1,
+									"numoutlets" : 2,
+									"outlettype" : [ "", "bang" ],
+									"parameter_enable" : 0,
+									"patching_rect" : [ 333.0, 117.0, 50.0, 22.0 ],
+									"style" : ""
+								}
+
+							}
+, 							{
+								"box" : 								{
+									"comment" : "",
+									"id" : "obj-3",
+									"index" : 4,
+									"maxclass" : "inlet",
+									"numinlets" : 0,
+									"numoutlets" : 1,
+									"outlettype" : [ "" ],
+									"patching_rect" : [ 290.0, 39.0, 30.0, 30.0 ],
+									"style" : ""
+								}
+
+							}
+, 							{
+								"box" : 								{
 									"comment" : "",
 									"id" : "obj-6",
 									"index" : 3,
@@ -6593,7 +7625,7 @@
 									"numinlets" : 0,
 									"numoutlets" : 1,
 									"outlettype" : [ "int" ],
-									"patching_rect" : [ 340.75, 54.0, 30.0, 30.0 ],
+									"patching_rect" : [ 220.75, 40.0, 30.0, 30.0 ],
 									"style" : ""
 								}
 
@@ -6605,7 +7637,7 @@
 									"maxclass" : "comment",
 									"numinlets" : 1,
 									"numoutlets" : 0,
-									"patching_rect" : [ 391.0, 40.0, 222.0, 75.0 ],
+									"patching_rect" : [ 391.0, 40.0, 223.0, 75.0 ],
 									"style" : "",
 									"text" : "Name: PlaySound\nDescription: First inlet takes 0 (off) or 1 (on), second takes the name of a sound file, third takes a trigger/toggle to turn on/off sound."
 								}
@@ -6674,7 +7706,7 @@
 									"orientation" : 1,
 									"outlettype" : [ "signal", "signal", "", "float", "list" ],
 									"parameter_enable" : 1,
-									"patching_rect" : [ 79.75, 282.0, 136.0, 27.0 ],
+									"patching_rect" : [ 79.75, 282.0, 136.0, 41.0 ],
 									"presentation_rect" : [ 105.0, 105.0, 50.0, 27.0 ],
 									"saved_attribute_attributes" : 									{
 										"valueof" : 										{
@@ -6780,6 +7812,20 @@
 							}
 , 							{
 								"patchline" : 								{
+									"destination" : [ "obj-139", 0 ],
+									"source" : [ "obj-138", 0 ]
+								}
+
+							}
+, 							{
+								"patchline" : 								{
+									"destination" : [ "obj-124", 0 ],
+									"source" : [ "obj-139", 0 ]
+								}
+
+							}
+, 							{
+								"patchline" : 								{
 									"destination" : [ "obj-43", 0 ],
 									"source" : [ "obj-18", 0 ]
 								}
@@ -6796,6 +7842,13 @@
 								"patchline" : 								{
 									"destination" : [ "obj-34", 0 ],
 									"source" : [ "obj-26", 0 ]
+								}
+
+							}
+, 							{
+								"patchline" : 								{
+									"destination" : [ "obj-138", 0 ],
+									"source" : [ "obj-3", 0 ]
 								}
 
 							}
@@ -6876,7 +7929,7 @@
 					"color" : [ 0.113339, 0.606332, 0.609597, 1.0 ],
 					"id" : "obj-47",
 					"maxclass" : "newobj",
-					"numinlets" : 3,
+					"numinlets" : 4,
 					"numoutlets" : 0,
 					"patcher" : 					{
 						"fileversion" : 1,
@@ -6917,6 +7970,47 @@
 						"subpatcher_template" : "",
 						"boxes" : [ 							{
 								"box" : 								{
+									"id" : "obj-139",
+									"maxclass" : "newobj",
+									"numinlets" : 6,
+									"numoutlets" : 1,
+									"outlettype" : [ "" ],
+									"patching_rect" : [ 322.0, 151.0, 113.0, 22.0 ],
+									"style" : "",
+									"text" : "scale 0. 200. -70. 0"
+								}
+
+							}
+, 							{
+								"box" : 								{
+									"format" : 6,
+									"id" : "obj-138",
+									"maxclass" : "flonum",
+									"numinlets" : 1,
+									"numoutlets" : 2,
+									"outlettype" : [ "", "bang" ],
+									"parameter_enable" : 0,
+									"patching_rect" : [ 322.0, 119.0, 50.0, 22.0 ],
+									"style" : ""
+								}
+
+							}
+, 							{
+								"box" : 								{
+									"comment" : "",
+									"id" : "obj-3",
+									"index" : 4,
+									"maxclass" : "inlet",
+									"numinlets" : 0,
+									"numoutlets" : 1,
+									"outlettype" : [ "" ],
+									"patching_rect" : [ 279.0, 41.0, 30.0, 30.0 ],
+									"style" : ""
+								}
+
+							}
+, 							{
+								"box" : 								{
 									"comment" : "",
 									"id" : "obj-6",
 									"index" : 3,
@@ -6924,7 +8018,7 @@
 									"numinlets" : 0,
 									"numoutlets" : 1,
 									"outlettype" : [ "int" ],
-									"patching_rect" : [ 340.75, 54.0, 30.0, 30.0 ],
+									"patching_rect" : [ 198.75, 40.0, 30.0, 30.0 ],
 									"style" : ""
 								}
 
@@ -6936,7 +8030,7 @@
 									"maxclass" : "comment",
 									"numinlets" : 1,
 									"numoutlets" : 0,
-									"patching_rect" : [ 391.0, 40.0, 222.0, 75.0 ],
+									"patching_rect" : [ 391.0, 40.0, 223.0, 75.0 ],
 									"style" : "",
 									"text" : "Name: PlaySound\nDescription: First inlet takes 0 (off) or 1 (on), second takes the name of a sound file, third takes a trigger/toggle to turn on/off sound."
 								}
@@ -7005,7 +8099,7 @@
 									"orientation" : 1,
 									"outlettype" : [ "signal", "signal", "", "float", "list" ],
 									"parameter_enable" : 1,
-									"patching_rect" : [ 79.75, 282.0, 136.0, 27.0 ],
+									"patching_rect" : [ 79.75, 282.0, 136.0, 41.0 ],
 									"presentation_rect" : [ 105.0, 105.0, 50.0, 27.0 ],
 									"saved_attribute_attributes" : 									{
 										"valueof" : 										{
@@ -7111,6 +8205,20 @@
 							}
 , 							{
 								"patchline" : 								{
+									"destination" : [ "obj-139", 0 ],
+									"source" : [ "obj-138", 0 ]
+								}
+
+							}
+, 							{
+								"patchline" : 								{
+									"destination" : [ "obj-124", 0 ],
+									"source" : [ "obj-139", 0 ]
+								}
+
+							}
+, 							{
+								"patchline" : 								{
 									"destination" : [ "obj-43", 0 ],
 									"source" : [ "obj-18", 0 ]
 								}
@@ -7127,6 +8235,13 @@
 								"patchline" : 								{
 									"destination" : [ "obj-34", 0 ],
 									"source" : [ "obj-26", 0 ]
+								}
+
+							}
+, 							{
+								"patchline" : 								{
+									"destination" : [ "obj-138", 0 ],
+									"source" : [ "obj-3", 0 ]
 								}
 
 							}
@@ -7233,7 +8348,7 @@
 					"color" : [ 0.113339, 0.606332, 0.609597, 1.0 ],
 					"id" : "obj-41",
 					"maxclass" : "newobj",
-					"numinlets" : 3,
+					"numinlets" : 4,
 					"numoutlets" : 0,
 					"patcher" : 					{
 						"fileversion" : 1,
@@ -7274,6 +8389,47 @@
 						"subpatcher_template" : "",
 						"boxes" : [ 							{
 								"box" : 								{
+									"id" : "obj-139",
+									"maxclass" : "newobj",
+									"numinlets" : 6,
+									"numoutlets" : 1,
+									"outlettype" : [ "" ],
+									"patching_rect" : [ 339.0, 149.0, 113.0, 22.0 ],
+									"style" : "",
+									"text" : "scale 0. 200. -70. 0"
+								}
+
+							}
+, 							{
+								"box" : 								{
+									"format" : 6,
+									"id" : "obj-138",
+									"maxclass" : "flonum",
+									"numinlets" : 1,
+									"numoutlets" : 2,
+									"outlettype" : [ "", "bang" ],
+									"parameter_enable" : 0,
+									"patching_rect" : [ 339.0, 117.0, 50.0, 22.0 ],
+									"style" : ""
+								}
+
+							}
+, 							{
+								"box" : 								{
+									"comment" : "",
+									"id" : "obj-3",
+									"index" : 4,
+									"maxclass" : "inlet",
+									"numinlets" : 0,
+									"numoutlets" : 1,
+									"outlettype" : [ "" ],
+									"patching_rect" : [ 296.0, 39.0, 30.0, 30.0 ],
+									"style" : ""
+								}
+
+							}
+, 							{
+								"box" : 								{
 									"comment" : "",
 									"id" : "obj-6",
 									"index" : 3,
@@ -7281,7 +8437,7 @@
 									"numinlets" : 0,
 									"numoutlets" : 1,
 									"outlettype" : [ "int" ],
-									"patching_rect" : [ 340.75, 54.0, 30.0, 30.0 ],
+									"patching_rect" : [ 244.0, 40.0, 30.0, 30.0 ],
 									"style" : ""
 								}
 
@@ -7293,7 +8449,7 @@
 									"maxclass" : "comment",
 									"numinlets" : 1,
 									"numoutlets" : 0,
-									"patching_rect" : [ 391.0, 40.0, 222.0, 75.0 ],
+									"patching_rect" : [ 391.0, 40.0, 223.0, 75.0 ],
 									"style" : "",
 									"text" : "Name: PlaySound\nDescription: First inlet takes 0 (off) or 1 (on), second takes the name of a sound file, third takes a trigger/toggle to turn on/off sound."
 								}
@@ -7362,7 +8518,7 @@
 									"orientation" : 1,
 									"outlettype" : [ "signal", "signal", "", "float", "list" ],
 									"parameter_enable" : 1,
-									"patching_rect" : [ 79.75, 282.0, 136.0, 27.0 ],
+									"patching_rect" : [ 79.75, 282.0, 136.0, 41.0 ],
 									"presentation_rect" : [ 105.0, 105.0, 50.0, 27.0 ],
 									"saved_attribute_attributes" : 									{
 										"valueof" : 										{
@@ -7468,6 +8624,20 @@
 							}
 , 							{
 								"patchline" : 								{
+									"destination" : [ "obj-139", 0 ],
+									"source" : [ "obj-138", 0 ]
+								}
+
+							}
+, 							{
+								"patchline" : 								{
+									"destination" : [ "obj-124", 0 ],
+									"source" : [ "obj-139", 0 ]
+								}
+
+							}
+, 							{
+								"patchline" : 								{
 									"destination" : [ "obj-43", 0 ],
 									"source" : [ "obj-18", 0 ]
 								}
@@ -7484,6 +8654,13 @@
 								"patchline" : 								{
 									"destination" : [ "obj-34", 0 ],
 									"source" : [ "obj-26", 0 ]
+								}
+
+							}
+, 							{
+								"patchline" : 								{
+									"destination" : [ "obj-138", 0 ],
+									"source" : [ "obj-3", 0 ]
 								}
 
 							}
@@ -7564,7 +8741,7 @@
 					"color" : [ 0.113339, 0.606332, 0.609597, 1.0 ],
 					"id" : "obj-38",
 					"maxclass" : "newobj",
-					"numinlets" : 3,
+					"numinlets" : 4,
 					"numoutlets" : 0,
 					"patcher" : 					{
 						"fileversion" : 1,
@@ -7605,6 +8782,47 @@
 						"subpatcher_template" : "",
 						"boxes" : [ 							{
 								"box" : 								{
+									"id" : "obj-139",
+									"maxclass" : "newobj",
+									"numinlets" : 6,
+									"numoutlets" : 1,
+									"outlettype" : [ "" ],
+									"patching_rect" : [ 330.0, 146.0, 113.0, 22.0 ],
+									"style" : "",
+									"text" : "scale 0. 200. -70. 0"
+								}
+
+							}
+, 							{
+								"box" : 								{
+									"format" : 6,
+									"id" : "obj-138",
+									"maxclass" : "flonum",
+									"numinlets" : 1,
+									"numoutlets" : 2,
+									"outlettype" : [ "", "bang" ],
+									"parameter_enable" : 0,
+									"patching_rect" : [ 330.0, 114.0, 50.0, 22.0 ],
+									"style" : ""
+								}
+
+							}
+, 							{
+								"box" : 								{
+									"comment" : "",
+									"id" : "obj-3",
+									"index" : 4,
+									"maxclass" : "inlet",
+									"numinlets" : 0,
+									"numoutlets" : 1,
+									"outlettype" : [ "" ],
+									"patching_rect" : [ 293.0, 42.0, 30.0, 30.0 ],
+									"style" : ""
+								}
+
+							}
+, 							{
+								"box" : 								{
 									"comment" : "",
 									"id" : "obj-6",
 									"index" : 3,
@@ -7612,7 +8830,7 @@
 									"numinlets" : 0,
 									"numoutlets" : 1,
 									"outlettype" : [ "int" ],
-									"patching_rect" : [ 340.75, 54.0, 30.0, 30.0 ],
+									"patching_rect" : [ 221.75, 40.0, 30.0, 30.0 ],
 									"style" : ""
 								}
 
@@ -7624,7 +8842,7 @@
 									"maxclass" : "comment",
 									"numinlets" : 1,
 									"numoutlets" : 0,
-									"patching_rect" : [ 391.0, 40.0, 222.0, 75.0 ],
+									"patching_rect" : [ 391.0, 40.0, 223.0, 75.0 ],
 									"style" : "",
 									"text" : "Name: PlaySound\nDescription: First inlet takes 0 (off) or 1 (on), second takes the name of a sound file, third takes a trigger/toggle to turn on/off sound."
 								}
@@ -7693,7 +8911,7 @@
 									"orientation" : 1,
 									"outlettype" : [ "signal", "signal", "", "float", "list" ],
 									"parameter_enable" : 1,
-									"patching_rect" : [ 79.75, 282.0, 136.0, 27.0 ],
+									"patching_rect" : [ 79.75, 282.0, 136.0, 41.0 ],
 									"presentation_rect" : [ 105.0, 105.0, 50.0, 27.0 ],
 									"saved_attribute_attributes" : 									{
 										"valueof" : 										{
@@ -7799,6 +9017,20 @@
 							}
 , 							{
 								"patchline" : 								{
+									"destination" : [ "obj-139", 0 ],
+									"source" : [ "obj-138", 0 ]
+								}
+
+							}
+, 							{
+								"patchline" : 								{
+									"destination" : [ "obj-124", 0 ],
+									"source" : [ "obj-139", 0 ]
+								}
+
+							}
+, 							{
+								"patchline" : 								{
 									"destination" : [ "obj-43", 0 ],
 									"source" : [ "obj-18", 0 ]
 								}
@@ -7815,6 +9047,13 @@
 								"patchline" : 								{
 									"destination" : [ "obj-34", 0 ],
 									"source" : [ "obj-26", 0 ]
+								}
+
+							}
+, 							{
+								"patchline" : 								{
+									"destination" : [ "obj-138", 0 ],
+									"source" : [ "obj-3", 0 ]
 								}
 
 							}
@@ -7895,7 +9134,7 @@
 					"color" : [ 0.113339, 0.606332, 0.609597, 1.0 ],
 					"id" : "obj-36",
 					"maxclass" : "newobj",
-					"numinlets" : 3,
+					"numinlets" : 4,
 					"numoutlets" : 0,
 					"patcher" : 					{
 						"fileversion" : 1,
@@ -7936,6 +9175,47 @@
 						"subpatcher_template" : "",
 						"boxes" : [ 							{
 								"box" : 								{
+									"id" : "obj-139",
+									"maxclass" : "newobj",
+									"numinlets" : 6,
+									"numoutlets" : 1,
+									"outlettype" : [ "" ],
+									"patching_rect" : [ 339.0, 149.0, 113.0, 22.0 ],
+									"style" : "",
+									"text" : "scale 0. 200. -70. 0"
+								}
+
+							}
+, 							{
+								"box" : 								{
+									"format" : 6,
+									"id" : "obj-138",
+									"maxclass" : "flonum",
+									"numinlets" : 1,
+									"numoutlets" : 2,
+									"outlettype" : [ "", "bang" ],
+									"parameter_enable" : 0,
+									"patching_rect" : [ 339.0, 117.0, 50.0, 22.0 ],
+									"style" : ""
+								}
+
+							}
+, 							{
+								"box" : 								{
+									"comment" : "",
+									"id" : "obj-3",
+									"index" : 4,
+									"maxclass" : "inlet",
+									"numinlets" : 0,
+									"numoutlets" : 1,
+									"outlettype" : [ "" ],
+									"patching_rect" : [ 296.0, 39.0, 30.0, 30.0 ],
+									"style" : ""
+								}
+
+							}
+, 							{
+								"box" : 								{
 									"comment" : "",
 									"id" : "obj-6",
 									"index" : 3,
@@ -7943,7 +9223,7 @@
 									"numinlets" : 0,
 									"numoutlets" : 1,
 									"outlettype" : [ "int" ],
-									"patching_rect" : [ 340.75, 54.0, 30.0, 30.0 ],
+									"patching_rect" : [ 229.0, 40.0, 30.0, 30.0 ],
 									"style" : ""
 								}
 
@@ -7955,7 +9235,7 @@
 									"maxclass" : "comment",
 									"numinlets" : 1,
 									"numoutlets" : 0,
-									"patching_rect" : [ 391.0, 40.0, 222.0, 75.0 ],
+									"patching_rect" : [ 391.0, 40.0, 223.0, 75.0 ],
 									"style" : "",
 									"text" : "Name: PlaySound\nDescription: First inlet takes 0 (off) or 1 (on), second takes the name of a sound file, third takes a trigger/toggle to turn on/off sound."
 								}
@@ -8024,7 +9304,7 @@
 									"orientation" : 1,
 									"outlettype" : [ "signal", "signal", "", "float", "list" ],
 									"parameter_enable" : 1,
-									"patching_rect" : [ 79.75, 282.0, 136.0, 27.0 ],
+									"patching_rect" : [ 79.75, 282.0, 136.0, 41.0 ],
 									"presentation_rect" : [ 105.0, 105.0, 50.0, 27.0 ],
 									"saved_attribute_attributes" : 									{
 										"valueof" : 										{
@@ -8130,6 +9410,20 @@
 							}
 , 							{
 								"patchline" : 								{
+									"destination" : [ "obj-139", 0 ],
+									"source" : [ "obj-138", 0 ]
+								}
+
+							}
+, 							{
+								"patchline" : 								{
+									"destination" : [ "obj-124", 0 ],
+									"source" : [ "obj-139", 0 ]
+								}
+
+							}
+, 							{
+								"patchline" : 								{
 									"destination" : [ "obj-43", 0 ],
 									"source" : [ "obj-18", 0 ]
 								}
@@ -8146,6 +9440,13 @@
 								"patchline" : 								{
 									"destination" : [ "obj-34", 0 ],
 									"source" : [ "obj-26", 0 ]
+								}
+
+							}
+, 							{
+								"patchline" : 								{
+									"destination" : [ "obj-138", 0 ],
+									"source" : [ "obj-3", 0 ]
 								}
 
 							}
@@ -8226,7 +9527,7 @@
 					"color" : [ 0.113339, 0.606332, 0.609597, 1.0 ],
 					"id" : "obj-34",
 					"maxclass" : "newobj",
-					"numinlets" : 3,
+					"numinlets" : 4,
 					"numoutlets" : 0,
 					"patcher" : 					{
 						"fileversion" : 1,
@@ -8267,6 +9568,47 @@
 						"subpatcher_template" : "",
 						"boxes" : [ 							{
 								"box" : 								{
+									"id" : "obj-139",
+									"maxclass" : "newobj",
+									"numinlets" : 6,
+									"numoutlets" : 1,
+									"outlettype" : [ "" ],
+									"patching_rect" : [ 311.0, 135.0, 113.0, 22.0 ],
+									"style" : "",
+									"text" : "scale 0. 200. -70. 0"
+								}
+
+							}
+, 							{
+								"box" : 								{
+									"format" : 6,
+									"id" : "obj-138",
+									"maxclass" : "flonum",
+									"numinlets" : 1,
+									"numoutlets" : 2,
+									"outlettype" : [ "", "bang" ],
+									"parameter_enable" : 0,
+									"patching_rect" : [ 311.0, 103.0, 50.0, 22.0 ],
+									"style" : ""
+								}
+
+							}
+, 							{
+								"box" : 								{
+									"comment" : "",
+									"id" : "obj-3",
+									"index" : 4,
+									"maxclass" : "inlet",
+									"numinlets" : 0,
+									"numoutlets" : 1,
+									"outlettype" : [ "" ],
+									"patching_rect" : [ 283.0, 42.0, 30.0, 30.0 ],
+									"style" : ""
+								}
+
+							}
+, 							{
+								"box" : 								{
 									"comment" : "",
 									"id" : "obj-6",
 									"index" : 3,
@@ -8274,7 +9616,7 @@
 									"numinlets" : 0,
 									"numoutlets" : 1,
 									"outlettype" : [ "int" ],
-									"patching_rect" : [ 340.75, 54.0, 30.0, 30.0 ],
+									"patching_rect" : [ 209.75, 40.0, 30.0, 30.0 ],
 									"style" : ""
 								}
 
@@ -8286,7 +9628,7 @@
 									"maxclass" : "comment",
 									"numinlets" : 1,
 									"numoutlets" : 0,
-									"patching_rect" : [ 391.0, 40.0, 222.0, 75.0 ],
+									"patching_rect" : [ 391.0, 40.0, 223.0, 75.0 ],
 									"style" : "",
 									"text" : "Name: PlaySound\nDescription: First inlet takes 0 (off) or 1 (on), second takes the name of a sound file, third takes a trigger/toggle to turn on/off sound."
 								}
@@ -8355,7 +9697,7 @@
 									"orientation" : 1,
 									"outlettype" : [ "signal", "signal", "", "float", "list" ],
 									"parameter_enable" : 1,
-									"patching_rect" : [ 79.75, 282.0, 136.0, 27.0 ],
+									"patching_rect" : [ 79.75, 282.0, 136.0, 41.0 ],
 									"presentation_rect" : [ 105.0, 105.0, 50.0, 27.0 ],
 									"saved_attribute_attributes" : 									{
 										"valueof" : 										{
@@ -8461,6 +9803,20 @@
 							}
 , 							{
 								"patchline" : 								{
+									"destination" : [ "obj-139", 0 ],
+									"source" : [ "obj-138", 0 ]
+								}
+
+							}
+, 							{
+								"patchline" : 								{
+									"destination" : [ "obj-124", 0 ],
+									"source" : [ "obj-139", 0 ]
+								}
+
+							}
+, 							{
+								"patchline" : 								{
 									"destination" : [ "obj-43", 0 ],
 									"source" : [ "obj-18", 0 ]
 								}
@@ -8477,6 +9833,13 @@
 								"patchline" : 								{
 									"destination" : [ "obj-34", 0 ],
 									"source" : [ "obj-26", 0 ]
+								}
+
+							}
+, 							{
+								"patchline" : 								{
+									"destination" : [ "obj-138", 0 ],
+									"source" : [ "obj-3", 0 ]
 								}
 
 							}
@@ -8557,7 +9920,7 @@
 					"color" : [ 0.113339, 0.606332, 0.609597, 1.0 ],
 					"id" : "obj-32",
 					"maxclass" : "newobj",
-					"numinlets" : 3,
+					"numinlets" : 4,
 					"numoutlets" : 0,
 					"patcher" : 					{
 						"fileversion" : 1,
@@ -8598,6 +9961,47 @@
 						"subpatcher_template" : "",
 						"boxes" : [ 							{
 								"box" : 								{
+									"id" : "obj-139",
+									"maxclass" : "newobj",
+									"numinlets" : 6,
+									"numoutlets" : 1,
+									"outlettype" : [ "" ],
+									"patching_rect" : [ 325.0, 150.0, 113.0, 22.0 ],
+									"style" : "",
+									"text" : "scale 0. 200. -70. 0"
+								}
+
+							}
+, 							{
+								"box" : 								{
+									"format" : 6,
+									"id" : "obj-138",
+									"maxclass" : "flonum",
+									"numinlets" : 1,
+									"numoutlets" : 2,
+									"outlettype" : [ "", "bang" ],
+									"parameter_enable" : 0,
+									"patching_rect" : [ 325.0, 118.0, 50.0, 22.0 ],
+									"style" : ""
+								}
+
+							}
+, 							{
+								"box" : 								{
+									"comment" : "",
+									"id" : "obj-3",
+									"index" : 4,
+									"maxclass" : "inlet",
+									"numinlets" : 0,
+									"numoutlets" : 1,
+									"outlettype" : [ "" ],
+									"patching_rect" : [ 282.0, 40.0, 30.0, 30.0 ],
+									"style" : ""
+								}
+
+							}
+, 							{
+								"box" : 								{
 									"comment" : "",
 									"id" : "obj-6",
 									"index" : 3,
@@ -8605,7 +10009,7 @@
 									"numinlets" : 0,
 									"numoutlets" : 1,
 									"outlettype" : [ "int" ],
-									"patching_rect" : [ 340.75, 54.0, 30.0, 30.0 ],
+									"patching_rect" : [ 204.75, 40.0, 30.0, 30.0 ],
 									"style" : ""
 								}
 
@@ -8617,7 +10021,7 @@
 									"maxclass" : "comment",
 									"numinlets" : 1,
 									"numoutlets" : 0,
-									"patching_rect" : [ 391.0, 40.0, 222.0, 75.0 ],
+									"patching_rect" : [ 391.0, 40.0, 223.0, 75.0 ],
 									"style" : "",
 									"text" : "Name: PlaySound\nDescription: First inlet takes 0 (off) or 1 (on), second takes the name of a sound file, third takes a trigger/toggle to turn on/off sound."
 								}
@@ -8686,7 +10090,7 @@
 									"orientation" : 1,
 									"outlettype" : [ "signal", "signal", "", "float", "list" ],
 									"parameter_enable" : 1,
-									"patching_rect" : [ 79.75, 282.0, 136.0, 27.0 ],
+									"patching_rect" : [ 79.75, 282.0, 136.0, 41.0 ],
 									"presentation_rect" : [ 105.0, 105.0, 50.0, 27.0 ],
 									"saved_attribute_attributes" : 									{
 										"valueof" : 										{
@@ -8792,6 +10196,20 @@
 							}
 , 							{
 								"patchline" : 								{
+									"destination" : [ "obj-139", 0 ],
+									"source" : [ "obj-138", 0 ]
+								}
+
+							}
+, 							{
+								"patchline" : 								{
+									"destination" : [ "obj-124", 0 ],
+									"source" : [ "obj-139", 0 ]
+								}
+
+							}
+, 							{
+								"patchline" : 								{
 									"destination" : [ "obj-43", 0 ],
 									"source" : [ "obj-18", 0 ]
 								}
@@ -8808,6 +10226,13 @@
 								"patchline" : 								{
 									"destination" : [ "obj-34", 0 ],
 									"source" : [ "obj-26", 0 ]
+								}
+
+							}
+, 							{
+								"patchline" : 								{
+									"destination" : [ "obj-138", 0 ],
+									"source" : [ "obj-3", 0 ]
 								}
 
 							}
@@ -8888,7 +10313,7 @@
 					"color" : [ 0.113339, 0.606332, 0.609597, 1.0 ],
 					"id" : "obj-30",
 					"maxclass" : "newobj",
-					"numinlets" : 3,
+					"numinlets" : 4,
 					"numoutlets" : 0,
 					"patcher" : 					{
 						"fileversion" : 1,
@@ -8900,7 +10325,7 @@
 							"modernui" : 1
 						}
 ,
-						"rect" : [ 198.0, 187.0, 640.0, 480.0 ],
+						"rect" : [ 415.0, 202.0, 640.0, 480.0 ],
 						"bglocked" : 0,
 						"openinpresentation" : 0,
 						"default_fontsize" : 12.0,
@@ -8929,6 +10354,47 @@
 						"subpatcher_template" : "",
 						"boxes" : [ 							{
 								"box" : 								{
+									"id" : "obj-139",
+									"maxclass" : "newobj",
+									"numinlets" : 6,
+									"numoutlets" : 1,
+									"outlettype" : [ "" ],
+									"patching_rect" : [ 312.0, 149.0, 113.0, 22.0 ],
+									"style" : "",
+									"text" : "scale 0. 200. -70. 0"
+								}
+
+							}
+, 							{
+								"box" : 								{
+									"format" : 6,
+									"id" : "obj-138",
+									"maxclass" : "flonum",
+									"numinlets" : 1,
+									"numoutlets" : 2,
+									"outlettype" : [ "", "bang" ],
+									"parameter_enable" : 0,
+									"patching_rect" : [ 312.0, 117.0, 50.0, 22.0 ],
+									"style" : ""
+								}
+
+							}
+, 							{
+								"box" : 								{
+									"comment" : "",
+									"id" : "obj-3",
+									"index" : 4,
+									"maxclass" : "inlet",
+									"numinlets" : 0,
+									"numoutlets" : 1,
+									"outlettype" : [ "" ],
+									"patching_rect" : [ 269.0, 39.0, 30.0, 30.0 ],
+									"style" : ""
+								}
+
+							}
+, 							{
+								"box" : 								{
 									"comment" : "",
 									"id" : "obj-6",
 									"index" : 3,
@@ -8936,7 +10402,7 @@
 									"numinlets" : 0,
 									"numoutlets" : 1,
 									"outlettype" : [ "int" ],
-									"patching_rect" : [ 340.75, 54.0, 30.0, 30.0 ],
+									"patching_rect" : [ 191.75, 40.0, 30.0, 30.0 ],
 									"style" : ""
 								}
 
@@ -9017,7 +10483,7 @@
 									"orientation" : 1,
 									"outlettype" : [ "signal", "signal", "", "float", "list" ],
 									"parameter_enable" : 1,
-									"patching_rect" : [ 79.75, 282.0, 136.0, 27.0 ],
+									"patching_rect" : [ 79.75, 282.0, 136.0, 41.0 ],
 									"presentation_rect" : [ 105.0, 105.0, 50.0, 27.0 ],
 									"saved_attribute_attributes" : 									{
 										"valueof" : 										{
@@ -9123,6 +10589,20 @@
 							}
 , 							{
 								"patchline" : 								{
+									"destination" : [ "obj-139", 0 ],
+									"source" : [ "obj-138", 0 ]
+								}
+
+							}
+, 							{
+								"patchline" : 								{
+									"destination" : [ "obj-124", 0 ],
+									"source" : [ "obj-139", 0 ]
+								}
+
+							}
+, 							{
+								"patchline" : 								{
 									"destination" : [ "obj-43", 0 ],
 									"source" : [ "obj-18", 0 ]
 								}
@@ -9139,6 +10619,13 @@
 								"patchline" : 								{
 									"destination" : [ "obj-34", 0 ],
 									"source" : [ "obj-26", 0 ]
+								}
+
+							}
+, 							{
+								"patchline" : 								{
+									"destination" : [ "obj-138", 0 ],
+									"source" : [ "obj-3", 0 ]
 								}
 
 							}
@@ -9222,7 +10709,7 @@
 					"color" : [ 0.113339, 0.606332, 0.609597, 1.0 ],
 					"id" : "obj-27",
 					"maxclass" : "newobj",
-					"numinlets" : 3,
+					"numinlets" : 4,
 					"numoutlets" : 0,
 					"patcher" : 					{
 						"fileversion" : 1,
@@ -9234,7 +10721,7 @@
 							"modernui" : 1
 						}
 ,
-						"rect" : [ 198.0, 187.0, 640.0, 480.0 ],
+						"rect" : [ 253.0, 196.0, 640.0, 480.0 ],
 						"bglocked" : 0,
 						"openinpresentation" : 0,
 						"default_fontsize" : 12.0,
@@ -9263,6 +10750,47 @@
 						"subpatcher_template" : "",
 						"boxes" : [ 							{
 								"box" : 								{
+									"id" : "obj-139",
+									"maxclass" : "newobj",
+									"numinlets" : 6,
+									"numoutlets" : 1,
+									"outlettype" : [ "" ],
+									"patching_rect" : [ 283.0, 150.0, 113.0, 22.0 ],
+									"style" : "",
+									"text" : "scale 0. 200. -70. 0"
+								}
+
+							}
+, 							{
+								"box" : 								{
+									"format" : 6,
+									"id" : "obj-138",
+									"maxclass" : "flonum",
+									"numinlets" : 1,
+									"numoutlets" : 2,
+									"outlettype" : [ "", "bang" ],
+									"parameter_enable" : 0,
+									"patching_rect" : [ 283.0, 118.0, 50.0, 22.0 ],
+									"style" : ""
+								}
+
+							}
+, 							{
+								"box" : 								{
+									"comment" : "",
+									"id" : "obj-3",
+									"index" : 4,
+									"maxclass" : "inlet",
+									"numinlets" : 0,
+									"numoutlets" : 1,
+									"outlettype" : [ "" ],
+									"patching_rect" : [ 240.0, 40.0, 30.0, 30.0 ],
+									"style" : ""
+								}
+
+							}
+, 							{
+								"box" : 								{
 									"comment" : "",
 									"id" : "obj-6",
 									"index" : 3,
@@ -9270,7 +10798,7 @@
 									"numinlets" : 0,
 									"numoutlets" : 1,
 									"outlettype" : [ "int" ],
-									"patching_rect" : [ 340.75, 54.0, 30.0, 30.0 ],
+									"patching_rect" : [ 180.75, 40.0, 30.0, 30.0 ],
 									"style" : ""
 								}
 
@@ -9295,7 +10823,7 @@
 									"numinlets" : 1,
 									"numoutlets" : 1,
 									"outlettype" : [ "bang" ],
-									"patching_rect" : [ 229.0, 100.0, 60.0, 22.0 ],
+									"patching_rect" : [ 193.0, 107.0, 60.0, 22.0 ],
 									"style" : "",
 									"text" : "loadbang"
 								}
@@ -9308,7 +10836,7 @@
 									"numinlets" : 2,
 									"numoutlets" : 1,
 									"outlettype" : [ "" ],
-									"patching_rect" : [ 229.0, 203.0, 33.0, 22.0 ],
+									"patching_rect" : [ 193.0, 203.0, 33.0, 22.0 ],
 									"style" : "",
 									"text" : "loop"
 								}
@@ -9457,6 +10985,20 @@
 							}
 , 							{
 								"patchline" : 								{
+									"destination" : [ "obj-139", 0 ],
+									"source" : [ "obj-138", 0 ]
+								}
+
+							}
+, 							{
+								"patchline" : 								{
+									"destination" : [ "obj-124", 0 ],
+									"source" : [ "obj-139", 0 ]
+								}
+
+							}
+, 							{
+								"patchline" : 								{
 									"destination" : [ "obj-43", 0 ],
 									"source" : [ "obj-18", 0 ]
 								}
@@ -9473,6 +11015,13 @@
 								"patchline" : 								{
 									"destination" : [ "obj-34", 0 ],
 									"source" : [ "obj-26", 0 ]
+								}
+
+							}
+, 							{
+								"patchline" : 								{
+									"destination" : [ "obj-138", 0 ],
+									"source" : [ "obj-3", 0 ]
 								}
 
 							}
@@ -9585,7 +11134,7 @@
 					"outlettype" : [ "jit_matrix", "" ],
 					"patching_rect" : [ 36.0, 204.0, 139.0, 22.0 ],
 					"style" : "",
-					"text" : "jit.slide @slide_down 10"
+					"text" : "jit.slide @slide_down 30"
 				}
 
 			}
@@ -14752,7 +16301,7 @@
 					"numoutlets" : 2,
 					"outlettype" : [ "", "bang" ],
 					"parameter_enable" : 0,
-					"patching_rect" : [ 316.0, 154.0, 50.0, 22.0 ],
+					"patching_rect" : [ 315.75, 166.0, 50.0, 22.0 ],
 					"style" : ""
 				}
 
@@ -15018,6 +16567,13 @@
 			}
 , 			{
 				"patchline" : 				{
+					"destination" : [ "obj-61", 3 ],
+					"source" : [ "obj-101", 1 ]
+				}
+
+			}
+, 			{
+				"patchline" : 				{
 					"destination" : [ "obj-59", 0 ],
 					"source" : [ "obj-102", 0 ]
 				}
@@ -15027,6 +16583,13 @@
 				"patchline" : 				{
 					"destination" : [ "obj-102", 0 ],
 					"source" : [ "obj-103", 0 ]
+				}
+
+			}
+, 			{
+				"patchline" : 				{
+					"destination" : [ "obj-59", 3 ],
+					"source" : [ "obj-103", 1 ]
 				}
 
 			}
@@ -15046,6 +16609,13 @@
 			}
 , 			{
 				"patchline" : 				{
+					"destination" : [ "obj-57", 3 ],
+					"source" : [ "obj-105", 1 ]
+				}
+
+			}
+, 			{
+				"patchline" : 				{
 					"destination" : [ "obj-76", 0 ],
 					"source" : [ "obj-106", 0 ]
 				}
@@ -15060,6 +16630,13 @@
 			}
 , 			{
 				"patchline" : 				{
+					"destination" : [ "obj-76", 3 ],
+					"source" : [ "obj-107", 1 ]
+				}
+
+			}
+, 			{
+				"patchline" : 				{
 					"destination" : [ "obj-74", 0 ],
 					"source" : [ "obj-108", 0 ]
 				}
@@ -15069,6 +16646,13 @@
 				"patchline" : 				{
 					"destination" : [ "obj-108", 0 ],
 					"source" : [ "obj-109", 0 ]
+				}
+
+			}
+, 			{
+				"patchline" : 				{
+					"destination" : [ "obj-74", 3 ],
+					"source" : [ "obj-109", 1 ]
 				}
 
 			}
@@ -15095,6 +16679,13 @@
 			}
 , 			{
 				"patchline" : 				{
+					"destination" : [ "obj-72", 3 ],
+					"source" : [ "obj-111", 1 ]
+				}
+
+			}
+, 			{
+				"patchline" : 				{
 					"destination" : [ "obj-70", 0 ],
 					"source" : [ "obj-112", 0 ]
 				}
@@ -15104,6 +16695,13 @@
 				"patchline" : 				{
 					"destination" : [ "obj-112", 0 ],
 					"source" : [ "obj-113", 0 ]
+				}
+
+			}
+, 			{
+				"patchline" : 				{
+					"destination" : [ "obj-70", 3 ],
+					"source" : [ "obj-113", 1 ]
 				}
 
 			}
@@ -15123,8 +16721,22 @@
 			}
 , 			{
 				"patchline" : 				{
+					"destination" : [ "obj-68", 3 ],
+					"source" : [ "obj-115", 1 ]
+				}
+
+			}
+, 			{
+				"patchline" : 				{
 					"destination" : [ "obj-17", 0 ],
 					"source" : [ "obj-116", 0 ]
+				}
+
+			}
+, 			{
+				"patchline" : 				{
+					"destination" : [ "obj-128", 3 ],
+					"source" : [ "obj-117", 1 ]
 				}
 
 			}
@@ -15167,6 +16779,13 @@
 			}
 , 			{
 				"patchline" : 				{
+					"destination" : [ "obj-130", 3 ],
+					"source" : [ "obj-120", 1 ]
+				}
+
+			}
+, 			{
+				"patchline" : 				{
 					"destination" : [ "obj-132", 0 ],
 					"source" : [ "obj-121", 0 ]
 				}
@@ -15176,6 +16795,13 @@
 				"patchline" : 				{
 					"destination" : [ "obj-121", 0 ],
 					"source" : [ "obj-122", 0 ]
+				}
+
+			}
+, 			{
+				"patchline" : 				{
+					"destination" : [ "obj-132", 3 ],
+					"source" : [ "obj-122", 1 ]
 				}
 
 			}
@@ -15195,6 +16821,13 @@
 			}
 , 			{
 				"patchline" : 				{
+					"destination" : [ "obj-134", 3 ],
+					"source" : [ "obj-124", 1 ]
+				}
+
+			}
+, 			{
+				"patchline" : 				{
 					"destination" : [ "obj-136", 0 ],
 					"source" : [ "obj-125", 0 ]
 				}
@@ -15204,6 +16837,13 @@
 				"patchline" : 				{
 					"destination" : [ "obj-125", 0 ],
 					"source" : [ "obj-126", 0 ]
+				}
+
+			}
+, 			{
+				"patchline" : 				{
+					"destination" : [ "obj-136", 3 ],
+					"source" : [ "obj-126", 1 ]
 				}
 
 			}
@@ -15268,7 +16908,7 @@
 , 			{
 				"patchline" : 				{
 					"destination" : [ "obj-14", 1 ],
-					"midpoints" : [ 325.5, 176.0, 128.5, 176.0 ],
+					"midpoints" : [ 325.25, 176.0, 128.5, 176.0 ],
 					"source" : [ "obj-15", 0 ]
 				}
 
@@ -15500,7 +17140,7 @@
 , 			{
 				"patchline" : 				{
 					"destination" : [ "obj-128", 2 ],
-					"order" : 3,
+					"order" : 0,
 					"source" : [ "obj-29", 0 ]
 				}
 
@@ -15508,7 +17148,7 @@
 , 			{
 				"patchline" : 				{
 					"destination" : [ "obj-130", 2 ],
-					"order" : 7,
+					"order" : 5,
 					"source" : [ "obj-29", 0 ]
 				}
 
@@ -15516,7 +17156,7 @@
 , 			{
 				"patchline" : 				{
 					"destination" : [ "obj-132", 2 ],
-					"order" : 13,
+					"order" : 10,
 					"source" : [ "obj-29", 0 ]
 				}
 
@@ -15524,7 +17164,7 @@
 , 			{
 				"patchline" : 				{
 					"destination" : [ "obj-134", 2 ],
-					"order" : 19,
+					"order" : 16,
 					"source" : [ "obj-29", 0 ]
 				}
 
@@ -15532,7 +17172,7 @@
 , 			{
 				"patchline" : 				{
 					"destination" : [ "obj-136", 2 ],
-					"order" : 25,
+					"order" : 21,
 					"source" : [ "obj-29", 0 ]
 				}
 
@@ -15540,7 +17180,7 @@
 , 			{
 				"patchline" : 				{
 					"destination" : [ "obj-27", 2 ],
-					"order" : 24,
+					"order" : 25,
 					"source" : [ "obj-29", 0 ]
 				}
 
@@ -15588,7 +17228,7 @@
 , 			{
 				"patchline" : 				{
 					"destination" : [ "obj-38", 2 ],
-					"order" : 23,
+					"order" : 24,
 					"source" : [ "obj-29", 0 ]
 				}
 
@@ -15596,7 +17236,7 @@
 , 			{
 				"patchline" : 				{
 					"destination" : [ "obj-41", 2 ],
-					"order" : 18,
+					"order" : 19,
 					"source" : [ "obj-29", 0 ]
 				}
 
@@ -15604,7 +17244,7 @@
 , 			{
 				"patchline" : 				{
 					"destination" : [ "obj-47", 2 ],
-					"order" : 12,
+					"order" : 13,
 					"source" : [ "obj-29", 0 ]
 				}
 
@@ -15620,7 +17260,7 @@
 , 			{
 				"patchline" : 				{
 					"destination" : [ "obj-51", 2 ],
-					"order" : 2,
+					"order" : 3,
 					"source" : [ "obj-29", 0 ]
 				}
 
@@ -15628,7 +17268,7 @@
 , 			{
 				"patchline" : 				{
 					"destination" : [ "obj-57", 2 ],
-					"order" : 22,
+					"order" : 23,
 					"source" : [ "obj-29", 0 ]
 				}
 
@@ -15636,7 +17276,7 @@
 , 			{
 				"patchline" : 				{
 					"destination" : [ "obj-59", 2 ],
-					"order" : 17,
+					"order" : 18,
 					"source" : [ "obj-29", 0 ]
 				}
 
@@ -15644,7 +17284,7 @@
 , 			{
 				"patchline" : 				{
 					"destination" : [ "obj-61", 2 ],
-					"order" : 11,
+					"order" : 12,
 					"source" : [ "obj-29", 0 ]
 				}
 
@@ -15652,7 +17292,7 @@
 , 			{
 				"patchline" : 				{
 					"destination" : [ "obj-64", 2 ],
-					"order" : 6,
+					"order" : 7,
 					"source" : [ "obj-29", 0 ]
 				}
 
@@ -15660,7 +17300,7 @@
 , 			{
 				"patchline" : 				{
 					"destination" : [ "obj-66", 2 ],
-					"order" : 1,
+					"order" : 2,
 					"source" : [ "obj-29", 0 ]
 				}
 
@@ -15668,7 +17308,7 @@
 , 			{
 				"patchline" : 				{
 					"destination" : [ "obj-68", 2 ],
-					"order" : 21,
+					"order" : 22,
 					"source" : [ "obj-29", 0 ]
 				}
 
@@ -15676,7 +17316,7 @@
 , 			{
 				"patchline" : 				{
 					"destination" : [ "obj-70", 2 ],
-					"order" : 16,
+					"order" : 17,
 					"source" : [ "obj-29", 0 ]
 				}
 
@@ -15684,7 +17324,7 @@
 , 			{
 				"patchline" : 				{
 					"destination" : [ "obj-72", 2 ],
-					"order" : 10,
+					"order" : 11,
 					"source" : [ "obj-29", 0 ]
 				}
 
@@ -15692,7 +17332,7 @@
 , 			{
 				"patchline" : 				{
 					"destination" : [ "obj-74", 2 ],
-					"order" : 5,
+					"order" : 6,
 					"source" : [ "obj-29", 0 ]
 				}
 
@@ -15700,7 +17340,7 @@
 , 			{
 				"patchline" : 				{
 					"destination" : [ "obj-76", 2 ],
-					"order" : 0,
+					"order" : 1,
 					"source" : [ "obj-29", 0 ]
 				}
 
@@ -16000,6 +17640,13 @@
 			}
 , 			{
 				"patchline" : 				{
+					"destination" : [ "obj-27", 3 ],
+					"source" : [ "obj-53", 1 ]
+				}
+
+			}
+, 			{
+				"patchline" : 				{
 					"destination" : [ "obj-54", 0 ],
 					"source" : [ "obj-53", 0 ]
 				}
@@ -16016,6 +17663,13 @@
 				"patchline" : 				{
 					"destination" : [ "obj-30", 0 ],
 					"source" : [ "obj-55", 0 ]
+				}
+
+			}
+, 			{
+				"patchline" : 				{
+					"destination" : [ "obj-30", 3 ],
+					"source" : [ "obj-56", 1 ]
 				}
 
 			}
@@ -16120,6 +17774,13 @@
 			}
 , 			{
 				"patchline" : 				{
+					"destination" : [ "obj-32", 3 ],
+					"source" : [ "obj-81", 1 ]
+				}
+
+			}
+, 			{
+				"patchline" : 				{
 					"destination" : [ "obj-80", 0 ],
 					"source" : [ "obj-81", 0 ]
 				}
@@ -16129,6 +17790,13 @@
 				"patchline" : 				{
 					"destination" : [ "obj-34", 0 ],
 					"source" : [ "obj-82", 0 ]
+				}
+
+			}
+, 			{
+				"patchline" : 				{
+					"destination" : [ "obj-34", 3 ],
+					"source" : [ "obj-83", 1 ]
 				}
 
 			}
@@ -16148,6 +17816,13 @@
 			}
 , 			{
 				"patchline" : 				{
+					"destination" : [ "obj-36", 3 ],
+					"source" : [ "obj-85", 1 ]
+				}
+
+			}
+, 			{
+				"patchline" : 				{
 					"destination" : [ "obj-84", 0 ],
 					"source" : [ "obj-85", 0 ]
 				}
@@ -16157,6 +17832,13 @@
 				"patchline" : 				{
 					"destination" : [ "obj-51", 0 ],
 					"source" : [ "obj-86", 0 ]
+				}
+
+			}
+, 			{
+				"patchline" : 				{
+					"destination" : [ "obj-51", 3 ],
+					"source" : [ "obj-87", 1 ]
 				}
 
 			}
@@ -16176,6 +17858,13 @@
 			}
 , 			{
 				"patchline" : 				{
+					"destination" : [ "obj-49", 3 ],
+					"source" : [ "obj-89", 1 ]
+				}
+
+			}
+, 			{
+				"patchline" : 				{
 					"destination" : [ "obj-88", 0 ],
 					"source" : [ "obj-89", 0 ]
 				}
@@ -16185,6 +17874,13 @@
 				"patchline" : 				{
 					"destination" : [ "obj-47", 0 ],
 					"source" : [ "obj-90", 0 ]
+				}
+
+			}
+, 			{
+				"patchline" : 				{
+					"destination" : [ "obj-47", 3 ],
+					"source" : [ "obj-91", 1 ]
 				}
 
 			}
@@ -16204,6 +17900,13 @@
 			}
 , 			{
 				"patchline" : 				{
+					"destination" : [ "obj-41", 3 ],
+					"source" : [ "obj-93", 1 ]
+				}
+
+			}
+, 			{
+				"patchline" : 				{
 					"destination" : [ "obj-92", 0 ],
 					"source" : [ "obj-93", 0 ]
 				}
@@ -16213,6 +17916,13 @@
 				"patchline" : 				{
 					"destination" : [ "obj-38", 0 ],
 					"source" : [ "obj-94", 0 ]
+				}
+
+			}
+, 			{
+				"patchline" : 				{
+					"destination" : [ "obj-38", 3 ],
+					"source" : [ "obj-95", 1 ]
 				}
 
 			}
@@ -16232,6 +17942,13 @@
 			}
 , 			{
 				"patchline" : 				{
+					"destination" : [ "obj-66", 3 ],
+					"source" : [ "obj-97", 1 ]
+				}
+
+			}
+, 			{
+				"patchline" : 				{
 					"destination" : [ "obj-96", 0 ],
 					"source" : [ "obj-97", 0 ]
 				}
@@ -16241,6 +17958,13 @@
 				"patchline" : 				{
 					"destination" : [ "obj-64", 0 ],
 					"source" : [ "obj-98", 0 ]
+				}
+
+			}
+, 			{
+				"patchline" : 				{
+					"destination" : [ "obj-64", 3 ],
+					"source" : [ "obj-99", 1 ]
 				}
 
 			}
