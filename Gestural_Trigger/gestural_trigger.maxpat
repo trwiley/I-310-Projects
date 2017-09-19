@@ -9,7 +9,7 @@
 			"modernui" : 1
 		}
 ,
-		"rect" : [ 26.0, 85.0, 1029.0, 591.0 ],
+		"rect" : [ 42.0, 85.0, 1029.0, 591.0 ],
 		"bglocked" : 0,
 		"openinpresentation" : 0,
 		"default_fontsize" : 12.0,
@@ -95,6 +95,19 @@
 						"subpatcher_template" : "",
 						"boxes" : [ 							{
 								"box" : 								{
+									"id" : "obj-2",
+									"linecount" : 6,
+									"maxclass" : "comment",
+									"numinlets" : 1,
+									"numoutlets" : 0,
+									"patching_rect" : [ 403.0, 20.0, 223.0, 89.0 ],
+									"style" : "",
+									"text" : "Name: PlaySound\nDescription: First inlet takes 0 (off) or 1 (on), second takes the name of a sound file, third takes a trigger/toggle to turn on/off sound. The fourth takes a float argument to change the volume."
+								}
+
+							}
+, 							{
+								"box" : 								{
 									"id" : "obj-139",
 									"maxclass" : "newobj",
 									"numinlets" : 6,
@@ -145,19 +158,6 @@
 									"outlettype" : [ "int" ],
 									"patching_rect" : [ 210.75, 45.0, 30.0, 30.0 ],
 									"style" : ""
-								}
-
-							}
-, 							{
-								"box" : 								{
-									"id" : "obj-2",
-									"linecount" : 5,
-									"maxclass" : "comment",
-									"numinlets" : 1,
-									"numoutlets" : 0,
-									"patching_rect" : [ 391.0, 40.0, 223.0, 75.0 ],
-									"style" : "",
-									"text" : "Name: PlaySound\nDescription: First inlet takes 0 (off) or 1 (on), second takes the name of a sound file, third takes a trigger/toggle to turn on/off sound."
 								}
 
 							}
@@ -488,6 +488,19 @@
 						"subpatcher_template" : "",
 						"boxes" : [ 							{
 								"box" : 								{
+									"id" : "obj-2",
+									"linecount" : 6,
+									"maxclass" : "comment",
+									"numinlets" : 1,
+									"numoutlets" : 0,
+									"patching_rect" : [ 403.0, 20.0, 223.0, 89.0 ],
+									"style" : "",
+									"text" : "Name: PlaySound\nDescription: First inlet takes 0 (off) or 1 (on), second takes the name of a sound file, third takes a trigger/toggle to turn on/off sound. The fourth takes a float argument to change the volume."
+								}
+
+							}
+, 							{
+								"box" : 								{
 									"id" : "obj-139",
 									"maxclass" : "newobj",
 									"numinlets" : 6,
@@ -538,19 +551,6 @@
 									"outlettype" : [ "int" ],
 									"patching_rect" : [ 206.75, 40.0, 30.0, 30.0 ],
 									"style" : ""
-								}
-
-							}
-, 							{
-								"box" : 								{
-									"id" : "obj-2",
-									"linecount" : 5,
-									"maxclass" : "comment",
-									"numinlets" : 1,
-									"numoutlets" : 0,
-									"patching_rect" : [ 391.0, 40.0, 223.0, 75.0 ],
-									"style" : "",
-									"text" : "Name: PlaySound\nDescription: First inlet takes 0 (off) or 1 (on), second takes the name of a sound file, third takes a trigger/toggle to turn on/off sound."
 								}
 
 							}
@@ -881,6 +881,19 @@
 						"subpatcher_template" : "",
 						"boxes" : [ 							{
 								"box" : 								{
+									"id" : "obj-2",
+									"linecount" : 6,
+									"maxclass" : "comment",
+									"numinlets" : 1,
+									"numoutlets" : 0,
+									"patching_rect" : [ 403.0, 20.0, 223.0, 89.0 ],
+									"style" : "",
+									"text" : "Name: PlaySound\nDescription: First inlet takes 0 (off) or 1 (on), second takes the name of a sound file, third takes a trigger/toggle to turn on/off sound. The fourth takes a float argument to change the volume."
+								}
+
+							}
+, 							{
+								"box" : 								{
 									"id" : "obj-139",
 									"maxclass" : "newobj",
 									"numinlets" : 6,
@@ -931,19 +944,6 @@
 									"outlettype" : [ "int" ],
 									"patching_rect" : [ 209.75, 40.0, 30.0, 30.0 ],
 									"style" : ""
-								}
-
-							}
-, 							{
-								"box" : 								{
-									"id" : "obj-2",
-									"linecount" : 5,
-									"maxclass" : "comment",
-									"numinlets" : 1,
-									"numoutlets" : 0,
-									"patching_rect" : [ 391.0, 40.0, 223.0, 75.0 ],
-									"style" : "",
-									"text" : "Name: PlaySound\nDescription: First inlet takes 0 (off) or 1 (on), second takes the name of a sound file, third takes a trigger/toggle to turn on/off sound."
 								}
 
 							}
@@ -1274,6 +1274,19 @@
 						"subpatcher_template" : "",
 						"boxes" : [ 							{
 								"box" : 								{
+									"id" : "obj-2",
+									"linecount" : 6,
+									"maxclass" : "comment",
+									"numinlets" : 1,
+									"numoutlets" : 0,
+									"patching_rect" : [ 403.0, 20.0, 223.0, 89.0 ],
+									"style" : "",
+									"text" : "Name: PlaySound\nDescription: First inlet takes 0 (off) or 1 (on), second takes the name of a sound file, third takes a trigger/toggle to turn on/off sound. The fourth takes a float argument to change the volume."
+								}
+
+							}
+, 							{
+								"box" : 								{
 									"id" : "obj-139",
 									"maxclass" : "newobj",
 									"numinlets" : 6,
@@ -1324,19 +1337,6 @@
 									"outlettype" : [ "int" ],
 									"patching_rect" : [ 220.75, 40.0, 30.0, 30.0 ],
 									"style" : ""
-								}
-
-							}
-, 							{
-								"box" : 								{
-									"id" : "obj-2",
-									"linecount" : 5,
-									"maxclass" : "comment",
-									"numinlets" : 1,
-									"numoutlets" : 0,
-									"patching_rect" : [ 391.0, 40.0, 223.0, 75.0 ],
-									"style" : "",
-									"text" : "Name: PlaySound\nDescription: First inlet takes 0 (off) or 1 (on), second takes the name of a sound file, third takes a trigger/toggle to turn on/off sound."
 								}
 
 							}
@@ -1667,6 +1667,19 @@
 						"subpatcher_template" : "",
 						"boxes" : [ 							{
 								"box" : 								{
+									"id" : "obj-2",
+									"linecount" : 6,
+									"maxclass" : "comment",
+									"numinlets" : 1,
+									"numoutlets" : 0,
+									"patching_rect" : [ 403.0, 20.0, 223.0, 89.0 ],
+									"style" : "",
+									"text" : "Name: PlaySound\nDescription: First inlet takes 0 (off) or 1 (on), second takes the name of a sound file, third takes a trigger/toggle to turn on/off sound. The fourth takes a float argument to change the volume."
+								}
+
+							}
+, 							{
+								"box" : 								{
 									"id" : "obj-139",
 									"maxclass" : "newobj",
 									"numinlets" : 6,
@@ -1717,19 +1730,6 @@
 									"outlettype" : [ "int" ],
 									"patching_rect" : [ 222.75, 40.0, 30.0, 30.0 ],
 									"style" : ""
-								}
-
-							}
-, 							{
-								"box" : 								{
-									"id" : "obj-2",
-									"linecount" : 5,
-									"maxclass" : "comment",
-									"numinlets" : 1,
-									"numoutlets" : 0,
-									"patching_rect" : [ 391.0, 40.0, 223.0, 75.0 ],
-									"style" : "",
-									"text" : "Name: PlaySound\nDescription: First inlet takes 0 (off) or 1 (on), second takes the name of a sound file, third takes a trigger/toggle to turn on/off sound."
 								}
 
 							}
@@ -2059,7 +2059,6 @@
 						"tags" : "",
 						"style" : "",
 						"subpatcher_template" : "",
-						"visible" : 1,
 						"boxes" : [ 							{
 								"box" : 								{
 									"comment" : "",
@@ -3158,13 +3157,14 @@
 , 			{
 				"box" : 				{
 					"id" : "obj-22",
+					"linecount" : 2,
 					"maxclass" : "message",
 					"numinlets" : 2,
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
-					"patching_rect" : [ 326.0, 123.0, 29.5, 22.0 ],
+					"patching_rect" : [ 326.0, 123.0, 29.5, 36.0 ],
 					"style" : "",
-					"text" : "0.1"
+					"text" : "bang"
 				}
 
 			}
@@ -3241,6 +3241,19 @@
 						"subpatcher_template" : "",
 						"boxes" : [ 							{
 								"box" : 								{
+									"id" : "obj-2",
+									"linecount" : 6,
+									"maxclass" : "comment",
+									"numinlets" : 1,
+									"numoutlets" : 0,
+									"patching_rect" : [ 403.0, 20.0, 223.0, 89.0 ],
+									"style" : "",
+									"text" : "Name: PlaySound\nDescription: First inlet takes 0 (off) or 1 (on), second takes the name of a sound file, third takes a trigger/toggle to turn on/off sound. The fourth takes a float argument to change the volume."
+								}
+
+							}
+, 							{
+								"box" : 								{
 									"id" : "obj-139",
 									"maxclass" : "newobj",
 									"numinlets" : 6,
@@ -3291,19 +3304,6 @@
 									"outlettype" : [ "int" ],
 									"patching_rect" : [ 210.75, 40.0, 30.0, 30.0 ],
 									"style" : ""
-								}
-
-							}
-, 							{
-								"box" : 								{
-									"id" : "obj-2",
-									"linecount" : 5,
-									"maxclass" : "comment",
-									"numinlets" : 1,
-									"numoutlets" : 0,
-									"patching_rect" : [ 391.0, 40.0, 223.0, 75.0 ],
-									"style" : "",
-									"text" : "Name: PlaySound\nDescription: First inlet takes 0 (off) or 1 (on), second takes the name of a sound file, third takes a trigger/toggle to turn on/off sound."
 								}
 
 							}
@@ -3634,6 +3634,19 @@
 						"subpatcher_template" : "",
 						"boxes" : [ 							{
 								"box" : 								{
+									"id" : "obj-2",
+									"linecount" : 6,
+									"maxclass" : "comment",
+									"numinlets" : 1,
+									"numoutlets" : 0,
+									"patching_rect" : [ 403.0, 20.0, 223.0, 89.0 ],
+									"style" : "",
+									"text" : "Name: PlaySound\nDescription: First inlet takes 0 (off) or 1 (on), second takes the name of a sound file, third takes a trigger/toggle to turn on/off sound. The fourth takes a float argument to change the volume."
+								}
+
+							}
+, 							{
+								"box" : 								{
 									"id" : "obj-139",
 									"maxclass" : "newobj",
 									"numinlets" : 6,
@@ -3684,19 +3697,6 @@
 									"outlettype" : [ "int" ],
 									"patching_rect" : [ 197.75, 40.0, 30.0, 30.0 ],
 									"style" : ""
-								}
-
-							}
-, 							{
-								"box" : 								{
-									"id" : "obj-2",
-									"linecount" : 5,
-									"maxclass" : "comment",
-									"numinlets" : 1,
-									"numoutlets" : 0,
-									"patching_rect" : [ 391.0, 40.0, 223.0, 75.0 ],
-									"style" : "",
-									"text" : "Name: PlaySound\nDescription: First inlet takes 0 (off) or 1 (on), second takes the name of a sound file, third takes a trigger/toggle to turn on/off sound."
 								}
 
 							}
@@ -4027,6 +4027,19 @@
 						"subpatcher_template" : "",
 						"boxes" : [ 							{
 								"box" : 								{
+									"id" : "obj-2",
+									"linecount" : 6,
+									"maxclass" : "comment",
+									"numinlets" : 1,
+									"numoutlets" : 0,
+									"patching_rect" : [ 403.0, 20.0, 223.0, 89.0 ],
+									"style" : "",
+									"text" : "Name: PlaySound\nDescription: First inlet takes 0 (off) or 1 (on), second takes the name of a sound file, third takes a trigger/toggle to turn on/off sound. The fourth takes a float argument to change the volume."
+								}
+
+							}
+, 							{
+								"box" : 								{
 									"id" : "obj-139",
 									"maxclass" : "newobj",
 									"numinlets" : 6,
@@ -4077,19 +4090,6 @@
 									"outlettype" : [ "int" ],
 									"patching_rect" : [ 200.75, 46.0, 30.0, 30.0 ],
 									"style" : ""
-								}
-
-							}
-, 							{
-								"box" : 								{
-									"id" : "obj-2",
-									"linecount" : 5,
-									"maxclass" : "comment",
-									"numinlets" : 1,
-									"numoutlets" : 0,
-									"patching_rect" : [ 391.0, 40.0, 223.0, 75.0 ],
-									"style" : "",
-									"text" : "Name: PlaySound\nDescription: First inlet takes 0 (off) or 1 (on), second takes the name of a sound file, third takes a trigger/toggle to turn on/off sound."
 								}
 
 							}
@@ -4420,6 +4420,19 @@
 						"subpatcher_template" : "",
 						"boxes" : [ 							{
 								"box" : 								{
+									"id" : "obj-2",
+									"linecount" : 6,
+									"maxclass" : "comment",
+									"numinlets" : 1,
+									"numoutlets" : 0,
+									"patching_rect" : [ 403.0, 20.0, 223.0, 89.0 ],
+									"style" : "",
+									"text" : "Name: PlaySound\nDescription: First inlet takes 0 (off) or 1 (on), second takes the name of a sound file, third takes a trigger/toggle to turn on/off sound. The fourth takes a float argument to change the volume."
+								}
+
+							}
+, 							{
+								"box" : 								{
 									"id" : "obj-139",
 									"maxclass" : "newobj",
 									"numinlets" : 6,
@@ -4470,19 +4483,6 @@
 									"outlettype" : [ "int" ],
 									"patching_rect" : [ 240.75, 40.0, 30.0, 30.0 ],
 									"style" : ""
-								}
-
-							}
-, 							{
-								"box" : 								{
-									"id" : "obj-2",
-									"linecount" : 5,
-									"maxclass" : "comment",
-									"numinlets" : 1,
-									"numoutlets" : 0,
-									"patching_rect" : [ 391.0, 40.0, 223.0, 75.0 ],
-									"style" : "",
-									"text" : "Name: PlaySound\nDescription: First inlet takes 0 (off) or 1 (on), second takes the name of a sound file, third takes a trigger/toggle to turn on/off sound."
 								}
 
 							}
@@ -4813,6 +4813,19 @@
 						"subpatcher_template" : "",
 						"boxes" : [ 							{
 								"box" : 								{
+									"id" : "obj-2",
+									"linecount" : 6,
+									"maxclass" : "comment",
+									"numinlets" : 1,
+									"numoutlets" : 0,
+									"patching_rect" : [ 403.0, 20.0, 223.0, 89.0 ],
+									"style" : "",
+									"text" : "Name: PlaySound\nDescription: First inlet takes 0 (off) or 1 (on), second takes the name of a sound file, third takes a trigger/toggle to turn on/off sound. The fourth takes a float argument to change the volume."
+								}
+
+							}
+, 							{
+								"box" : 								{
 									"id" : "obj-139",
 									"maxclass" : "newobj",
 									"numinlets" : 6,
@@ -4863,19 +4876,6 @@
 									"outlettype" : [ "int" ],
 									"patching_rect" : [ 270.75, 40.0, 30.0, 30.0 ],
 									"style" : ""
-								}
-
-							}
-, 							{
-								"box" : 								{
-									"id" : "obj-2",
-									"linecount" : 5,
-									"maxclass" : "comment",
-									"numinlets" : 1,
-									"numoutlets" : 0,
-									"patching_rect" : [ 391.0, 40.0, 223.0, 75.0 ],
-									"style" : "",
-									"text" : "Name: PlaySound\nDescription: First inlet takes 0 (off) or 1 (on), second takes the name of a sound file, third takes a trigger/toggle to turn on/off sound."
 								}
 
 							}
@@ -5177,7 +5177,7 @@
 							"modernui" : 1
 						}
 ,
-						"rect" : [ 198.0, 187.0, 640.0, 480.0 ],
+						"rect" : [ 198.0, 187.0, 639.0, 480.0 ],
 						"bglocked" : 0,
 						"openinpresentation" : 0,
 						"default_fontsize" : 12.0,
@@ -5205,6 +5205,19 @@
 						"style" : "",
 						"subpatcher_template" : "",
 						"boxes" : [ 							{
+								"box" : 								{
+									"id" : "obj-2",
+									"linecount" : 6,
+									"maxclass" : "comment",
+									"numinlets" : 1,
+									"numoutlets" : 0,
+									"patching_rect" : [ 403.0, 20.0, 223.0, 89.0 ],
+									"style" : "",
+									"text" : "Name: PlaySound\nDescription: First inlet takes 0 (off) or 1 (on), second takes the name of a sound file, third takes a trigger/toggle to turn on/off sound. The fourth takes a float argument to change the volume."
+								}
+
+							}
+, 							{
 								"box" : 								{
 									"id" : "obj-139",
 									"maxclass" : "newobj",
@@ -5256,19 +5269,6 @@
 									"outlettype" : [ "int" ],
 									"patching_rect" : [ 236.75, 40.0, 30.0, 30.0 ],
 									"style" : ""
-								}
-
-							}
-, 							{
-								"box" : 								{
-									"id" : "obj-2",
-									"linecount" : 5,
-									"maxclass" : "comment",
-									"numinlets" : 1,
-									"numoutlets" : 0,
-									"patching_rect" : [ 391.0, 40.0, 223.0, 75.0 ],
-									"style" : "",
-									"text" : "Name: PlaySound\nDescription: First inlet takes 0 (off) or 1 (on), second takes the name of a sound file, third takes a trigger/toggle to turn on/off sound."
 								}
 
 							}
@@ -5599,6 +5599,19 @@
 						"subpatcher_template" : "",
 						"boxes" : [ 							{
 								"box" : 								{
+									"id" : "obj-2",
+									"linecount" : 6,
+									"maxclass" : "comment",
+									"numinlets" : 1,
+									"numoutlets" : 0,
+									"patching_rect" : [ 403.0, 20.0, 223.0, 89.0 ],
+									"style" : "",
+									"text" : "Name: PlaySound\nDescription: First inlet takes 0 (off) or 1 (on), second takes the name of a sound file, third takes a trigger/toggle to turn on/off sound. The fourth takes a float argument to change the volume."
+								}
+
+							}
+, 							{
+								"box" : 								{
 									"id" : "obj-139",
 									"maxclass" : "newobj",
 									"numinlets" : 6,
@@ -5649,19 +5662,6 @@
 									"outlettype" : [ "int" ],
 									"patching_rect" : [ 214.75, 40.0, 30.0, 30.0 ],
 									"style" : ""
-								}
-
-							}
-, 							{
-								"box" : 								{
-									"id" : "obj-2",
-									"linecount" : 5,
-									"maxclass" : "comment",
-									"numinlets" : 1,
-									"numoutlets" : 0,
-									"patching_rect" : [ 391.0, 40.0, 223.0, 75.0 ],
-									"style" : "",
-									"text" : "Name: PlaySound\nDescription: First inlet takes 0 (off) or 1 (on), second takes the name of a sound file, third takes a trigger/toggle to turn on/off sound."
 								}
 
 							}
@@ -6005,6 +6005,19 @@
 						"subpatcher_template" : "",
 						"boxes" : [ 							{
 								"box" : 								{
+									"id" : "obj-2",
+									"linecount" : 6,
+									"maxclass" : "comment",
+									"numinlets" : 1,
+									"numoutlets" : 0,
+									"patching_rect" : [ 403.0, 20.0, 223.0, 89.0 ],
+									"style" : "",
+									"text" : "Name: PlaySound\nDescription: First inlet takes 0 (off) or 1 (on), second takes the name of a sound file, third takes a trigger/toggle to turn on/off sound. The fourth takes a float argument to change the volume."
+								}
+
+							}
+, 							{
+								"box" : 								{
 									"id" : "obj-139",
 									"maxclass" : "newobj",
 									"numinlets" : 6,
@@ -6055,19 +6068,6 @@
 									"outlettype" : [ "int" ],
 									"patching_rect" : [ 240.75, 47.0, 30.0, 30.0 ],
 									"style" : ""
-								}
-
-							}
-, 							{
-								"box" : 								{
-									"id" : "obj-2",
-									"linecount" : 5,
-									"maxclass" : "comment",
-									"numinlets" : 1,
-									"numoutlets" : 0,
-									"patching_rect" : [ 391.0, 40.0, 223.0, 75.0 ],
-									"style" : "",
-									"text" : "Name: PlaySound\nDescription: First inlet takes 0 (off) or 1 (on), second takes the name of a sound file, third takes a trigger/toggle to turn on/off sound."
 								}
 
 							}
@@ -6398,6 +6398,19 @@
 						"subpatcher_template" : "",
 						"boxes" : [ 							{
 								"box" : 								{
+									"id" : "obj-2",
+									"linecount" : 6,
+									"maxclass" : "comment",
+									"numinlets" : 1,
+									"numoutlets" : 0,
+									"patching_rect" : [ 403.0, 20.0, 223.0, 89.0 ],
+									"style" : "",
+									"text" : "Name: PlaySound\nDescription: First inlet takes 0 (off) or 1 (on), second takes the name of a sound file, third takes a trigger/toggle to turn on/off sound. The fourth takes a float argument to change the volume."
+								}
+
+							}
+, 							{
+								"box" : 								{
 									"id" : "obj-139",
 									"maxclass" : "newobj",
 									"numinlets" : 6,
@@ -6448,19 +6461,6 @@
 									"outlettype" : [ "int" ],
 									"patching_rect" : [ 236.75, 40.0, 30.0, 30.0 ],
 									"style" : ""
-								}
-
-							}
-, 							{
-								"box" : 								{
-									"id" : "obj-2",
-									"linecount" : 5,
-									"maxclass" : "comment",
-									"numinlets" : 1,
-									"numoutlets" : 0,
-									"patching_rect" : [ 391.0, 40.0, 223.0, 75.0 ],
-									"style" : "",
-									"text" : "Name: PlaySound\nDescription: First inlet takes 0 (off) or 1 (on), second takes the name of a sound file, third takes a trigger/toggle to turn on/off sound."
 								}
 
 							}
@@ -6791,6 +6791,19 @@
 						"subpatcher_template" : "",
 						"boxes" : [ 							{
 								"box" : 								{
+									"id" : "obj-2",
+									"linecount" : 6,
+									"maxclass" : "comment",
+									"numinlets" : 1,
+									"numoutlets" : 0,
+									"patching_rect" : [ 403.0, 20.0, 223.0, 89.0 ],
+									"style" : "",
+									"text" : "Name: PlaySound\nDescription: First inlet takes 0 (off) or 1 (on), second takes the name of a sound file, third takes a trigger/toggle to turn on/off sound. The fourth takes a float argument to change the volume."
+								}
+
+							}
+, 							{
+								"box" : 								{
 									"id" : "obj-139",
 									"maxclass" : "newobj",
 									"numinlets" : 6,
@@ -6841,19 +6854,6 @@
 									"outlettype" : [ "int" ],
 									"patching_rect" : [ 205.75, 45.0, 30.0, 30.0 ],
 									"style" : ""
-								}
-
-							}
-, 							{
-								"box" : 								{
-									"id" : "obj-2",
-									"linecount" : 5,
-									"maxclass" : "comment",
-									"numinlets" : 1,
-									"numoutlets" : 0,
-									"patching_rect" : [ 391.0, 40.0, 223.0, 75.0 ],
-									"style" : "",
-									"text" : "Name: PlaySound\nDescription: First inlet takes 0 (off) or 1 (on), second takes the name of a sound file, third takes a trigger/toggle to turn on/off sound."
 								}
 
 							}
@@ -7184,6 +7184,19 @@
 						"subpatcher_template" : "",
 						"boxes" : [ 							{
 								"box" : 								{
+									"id" : "obj-2",
+									"linecount" : 6,
+									"maxclass" : "comment",
+									"numinlets" : 1,
+									"numoutlets" : 0,
+									"patching_rect" : [ 403.0, 20.0, 223.0, 89.0 ],
+									"style" : "",
+									"text" : "Name: PlaySound\nDescription: First inlet takes 0 (off) or 1 (on), second takes the name of a sound file, third takes a trigger/toggle to turn on/off sound. The fourth takes a float argument to change the volume."
+								}
+
+							}
+, 							{
+								"box" : 								{
 									"id" : "obj-139",
 									"maxclass" : "newobj",
 									"numinlets" : 6,
@@ -7234,19 +7247,6 @@
 									"outlettype" : [ "int" ],
 									"patching_rect" : [ 205.75, 45.0, 30.0, 30.0 ],
 									"style" : ""
-								}
-
-							}
-, 							{
-								"box" : 								{
-									"id" : "obj-2",
-									"linecount" : 5,
-									"maxclass" : "comment",
-									"numinlets" : 1,
-									"numoutlets" : 0,
-									"patching_rect" : [ 391.0, 40.0, 223.0, 75.0 ],
-									"style" : "",
-									"text" : "Name: PlaySound\nDescription: First inlet takes 0 (off) or 1 (on), second takes the name of a sound file, third takes a trigger/toggle to turn on/off sound."
 								}
 
 							}
@@ -7577,6 +7577,19 @@
 						"subpatcher_template" : "",
 						"boxes" : [ 							{
 								"box" : 								{
+									"id" : "obj-2",
+									"linecount" : 6,
+									"maxclass" : "comment",
+									"numinlets" : 1,
+									"numoutlets" : 0,
+									"patching_rect" : [ 403.0, 20.0, 223.0, 89.0 ],
+									"style" : "",
+									"text" : "Name: PlaySound\nDescription: First inlet takes 0 (off) or 1 (on), second takes the name of a sound file, third takes a trigger/toggle to turn on/off sound. The fourth takes a float argument to change the volume."
+								}
+
+							}
+, 							{
+								"box" : 								{
 									"id" : "obj-139",
 									"maxclass" : "newobj",
 									"numinlets" : 6,
@@ -7627,19 +7640,6 @@
 									"outlettype" : [ "int" ],
 									"patching_rect" : [ 220.75, 40.0, 30.0, 30.0 ],
 									"style" : ""
-								}
-
-							}
-, 							{
-								"box" : 								{
-									"id" : "obj-2",
-									"linecount" : 5,
-									"maxclass" : "comment",
-									"numinlets" : 1,
-									"numoutlets" : 0,
-									"patching_rect" : [ 391.0, 40.0, 223.0, 75.0 ],
-									"style" : "",
-									"text" : "Name: PlaySound\nDescription: First inlet takes 0 (off) or 1 (on), second takes the name of a sound file, third takes a trigger/toggle to turn on/off sound."
 								}
 
 							}
@@ -7970,6 +7970,19 @@
 						"subpatcher_template" : "",
 						"boxes" : [ 							{
 								"box" : 								{
+									"id" : "obj-2",
+									"linecount" : 6,
+									"maxclass" : "comment",
+									"numinlets" : 1,
+									"numoutlets" : 0,
+									"patching_rect" : [ 403.0, 20.0, 223.0, 89.0 ],
+									"style" : "",
+									"text" : "Name: PlaySound\nDescription: First inlet takes 0 (off) or 1 (on), second takes the name of a sound file, third takes a trigger/toggle to turn on/off sound. The fourth takes a float argument to change the volume."
+								}
+
+							}
+, 							{
+								"box" : 								{
 									"id" : "obj-139",
 									"maxclass" : "newobj",
 									"numinlets" : 6,
@@ -8020,19 +8033,6 @@
 									"outlettype" : [ "int" ],
 									"patching_rect" : [ 198.75, 40.0, 30.0, 30.0 ],
 									"style" : ""
-								}
-
-							}
-, 							{
-								"box" : 								{
-									"id" : "obj-2",
-									"linecount" : 5,
-									"maxclass" : "comment",
-									"numinlets" : 1,
-									"numoutlets" : 0,
-									"patching_rect" : [ 391.0, 40.0, 223.0, 75.0 ],
-									"style" : "",
-									"text" : "Name: PlaySound\nDescription: First inlet takes 0 (off) or 1 (on), second takes the name of a sound file, third takes a trigger/toggle to turn on/off sound."
 								}
 
 							}
@@ -8389,6 +8389,19 @@
 						"subpatcher_template" : "",
 						"boxes" : [ 							{
 								"box" : 								{
+									"id" : "obj-2",
+									"linecount" : 6,
+									"maxclass" : "comment",
+									"numinlets" : 1,
+									"numoutlets" : 0,
+									"patching_rect" : [ 403.0, 20.0, 223.0, 89.0 ],
+									"style" : "",
+									"text" : "Name: PlaySound\nDescription: First inlet takes 0 (off) or 1 (on), second takes the name of a sound file, third takes a trigger/toggle to turn on/off sound. The fourth takes a float argument to change the volume."
+								}
+
+							}
+, 							{
+								"box" : 								{
 									"id" : "obj-139",
 									"maxclass" : "newobj",
 									"numinlets" : 6,
@@ -8439,19 +8452,6 @@
 									"outlettype" : [ "int" ],
 									"patching_rect" : [ 244.0, 40.0, 30.0, 30.0 ],
 									"style" : ""
-								}
-
-							}
-, 							{
-								"box" : 								{
-									"id" : "obj-2",
-									"linecount" : 5,
-									"maxclass" : "comment",
-									"numinlets" : 1,
-									"numoutlets" : 0,
-									"patching_rect" : [ 391.0, 40.0, 223.0, 75.0 ],
-									"style" : "",
-									"text" : "Name: PlaySound\nDescription: First inlet takes 0 (off) or 1 (on), second takes the name of a sound file, third takes a trigger/toggle to turn on/off sound."
 								}
 
 							}
@@ -8782,6 +8782,19 @@
 						"subpatcher_template" : "",
 						"boxes" : [ 							{
 								"box" : 								{
+									"id" : "obj-2",
+									"linecount" : 6,
+									"maxclass" : "comment",
+									"numinlets" : 1,
+									"numoutlets" : 0,
+									"patching_rect" : [ 403.0, 20.0, 223.0, 89.0 ],
+									"style" : "",
+									"text" : "Name: PlaySound\nDescription: First inlet takes 0 (off) or 1 (on), second takes the name of a sound file, third takes a trigger/toggle to turn on/off sound. The fourth takes a float argument to change the volume."
+								}
+
+							}
+, 							{
+								"box" : 								{
 									"id" : "obj-139",
 									"maxclass" : "newobj",
 									"numinlets" : 6,
@@ -8832,19 +8845,6 @@
 									"outlettype" : [ "int" ],
 									"patching_rect" : [ 221.75, 40.0, 30.0, 30.0 ],
 									"style" : ""
-								}
-
-							}
-, 							{
-								"box" : 								{
-									"id" : "obj-2",
-									"linecount" : 5,
-									"maxclass" : "comment",
-									"numinlets" : 1,
-									"numoutlets" : 0,
-									"patching_rect" : [ 391.0, 40.0, 223.0, 75.0 ],
-									"style" : "",
-									"text" : "Name: PlaySound\nDescription: First inlet takes 0 (off) or 1 (on), second takes the name of a sound file, third takes a trigger/toggle to turn on/off sound."
 								}
 
 							}
@@ -9175,6 +9175,19 @@
 						"subpatcher_template" : "",
 						"boxes" : [ 							{
 								"box" : 								{
+									"id" : "obj-2",
+									"linecount" : 6,
+									"maxclass" : "comment",
+									"numinlets" : 1,
+									"numoutlets" : 0,
+									"patching_rect" : [ 413.0, 25.0, 223.0, 89.0 ],
+									"style" : "",
+									"text" : "Name: PlaySound\nDescription: First inlet takes 0 (off) or 1 (on), second takes the name of a sound file, third takes a trigger/toggle to turn on/off sound. The fourth takes a float argument to change the volume."
+								}
+
+							}
+, 							{
+								"box" : 								{
 									"id" : "obj-139",
 									"maxclass" : "newobj",
 									"numinlets" : 6,
@@ -9225,19 +9238,6 @@
 									"outlettype" : [ "int" ],
 									"patching_rect" : [ 229.0, 40.0, 30.0, 30.0 ],
 									"style" : ""
-								}
-
-							}
-, 							{
-								"box" : 								{
-									"id" : "obj-2",
-									"linecount" : 5,
-									"maxclass" : "comment",
-									"numinlets" : 1,
-									"numoutlets" : 0,
-									"patching_rect" : [ 391.0, 40.0, 223.0, 75.0 ],
-									"style" : "",
-									"text" : "Name: PlaySound\nDescription: First inlet takes 0 (off) or 1 (on), second takes the name of a sound file, third takes a trigger/toggle to turn on/off sound."
 								}
 
 							}
@@ -9568,6 +9568,19 @@
 						"subpatcher_template" : "",
 						"boxes" : [ 							{
 								"box" : 								{
+									"id" : "obj-2",
+									"linecount" : 6,
+									"maxclass" : "comment",
+									"numinlets" : 1,
+									"numoutlets" : 0,
+									"patching_rect" : [ 403.0, 20.0, 223.0, 89.0 ],
+									"style" : "",
+									"text" : "Name: PlaySound\nDescription: First inlet takes 0 (off) or 1 (on), second takes the name of a sound file, third takes a trigger/toggle to turn on/off sound. The fourth takes a float argument to change the volume."
+								}
+
+							}
+, 							{
+								"box" : 								{
 									"id" : "obj-139",
 									"maxclass" : "newobj",
 									"numinlets" : 6,
@@ -9618,19 +9631,6 @@
 									"outlettype" : [ "int" ],
 									"patching_rect" : [ 209.75, 40.0, 30.0, 30.0 ],
 									"style" : ""
-								}
-
-							}
-, 							{
-								"box" : 								{
-									"id" : "obj-2",
-									"linecount" : 5,
-									"maxclass" : "comment",
-									"numinlets" : 1,
-									"numoutlets" : 0,
-									"patching_rect" : [ 391.0, 40.0, 223.0, 75.0 ],
-									"style" : "",
-									"text" : "Name: PlaySound\nDescription: First inlet takes 0 (off) or 1 (on), second takes the name of a sound file, third takes a trigger/toggle to turn on/off sound."
 								}
 
 							}
@@ -9961,6 +9961,19 @@
 						"subpatcher_template" : "",
 						"boxes" : [ 							{
 								"box" : 								{
+									"id" : "obj-2",
+									"linecount" : 6,
+									"maxclass" : "comment",
+									"numinlets" : 1,
+									"numoutlets" : 0,
+									"patching_rect" : [ 450.0, 25.0, 223.0, 89.0 ],
+									"style" : "",
+									"text" : "Name: PlaySound\nDescription: First inlet takes 0 (off) or 1 (on), second takes the name of a sound file, third takes a trigger/toggle to turn on/off sound. The fourth takes a float argument to change the volume."
+								}
+
+							}
+, 							{
+								"box" : 								{
 									"id" : "obj-139",
 									"maxclass" : "newobj",
 									"numinlets" : 6,
@@ -10011,19 +10024,6 @@
 									"outlettype" : [ "int" ],
 									"patching_rect" : [ 204.75, 40.0, 30.0, 30.0 ],
 									"style" : ""
-								}
-
-							}
-, 							{
-								"box" : 								{
-									"id" : "obj-2",
-									"linecount" : 5,
-									"maxclass" : "comment",
-									"numinlets" : 1,
-									"numoutlets" : 0,
-									"patching_rect" : [ 391.0, 40.0, 223.0, 75.0 ],
-									"style" : "",
-									"text" : "Name: PlaySound\nDescription: First inlet takes 0 (off) or 1 (on), second takes the name of a sound file, third takes a trigger/toggle to turn on/off sound."
 								}
 
 							}
@@ -10354,6 +10354,19 @@
 						"subpatcher_template" : "",
 						"boxes" : [ 							{
 								"box" : 								{
+									"id" : "obj-2",
+									"linecount" : 6,
+									"maxclass" : "comment",
+									"numinlets" : 1,
+									"numoutlets" : 0,
+									"patching_rect" : [ 391.0, 40.0, 223.0, 89.0 ],
+									"style" : "",
+									"text" : "Name: PlaySound\nDescription: First inlet takes 0 (off) or 1 (on), second takes the name of a sound file, third takes a trigger/toggle to turn on/off sound. The fourth takes a float argument to change the volume."
+								}
+
+							}
+, 							{
+								"box" : 								{
 									"id" : "obj-139",
 									"maxclass" : "newobj",
 									"numinlets" : 6,
@@ -10404,19 +10417,6 @@
 									"outlettype" : [ "int" ],
 									"patching_rect" : [ 191.75, 40.0, 30.0, 30.0 ],
 									"style" : ""
-								}
-
-							}
-, 							{
-								"box" : 								{
-									"id" : "obj-2",
-									"linecount" : 5,
-									"maxclass" : "comment",
-									"numinlets" : 1,
-									"numoutlets" : 0,
-									"patching_rect" : [ 391.0, 40.0, 223.0, 75.0 ],
-									"style" : "",
-									"text" : "Name: PlaySound\nDescription: First inlet takes 0 (off) or 1 (on), second takes the name of a sound file, third takes a trigger/toggle to turn on/off sound."
 								}
 
 							}
@@ -10806,13 +10806,13 @@
 , 							{
 								"box" : 								{
 									"id" : "obj-2",
-									"linecount" : 5,
+									"linecount" : 6,
 									"maxclass" : "comment",
 									"numinlets" : 1,
 									"numoutlets" : 0,
-									"patching_rect" : [ 391.0, 40.0, 223.0, 75.0 ],
+									"patching_rect" : [ 391.0, 40.0, 223.0, 89.0 ],
 									"style" : "",
-									"text" : "Name: PlaySound\nDescription: First inlet takes 0 (off) or 1 (on), second takes the name of a sound file, third takes a trigger/toggle to turn on/off sound."
+									"text" : "Name: PlaySound\nDescription: First inlet takes 0 (off) or 1 (on), second takes the name of a sound file, third takes a trigger/toggle to turn on/off sound. The fourth takes a float argument to change the volume."
 								}
 
 							}
@@ -17140,7 +17140,7 @@
 , 			{
 				"patchline" : 				{
 					"destination" : [ "obj-128", 2 ],
-					"order" : 0,
+					"order" : 3,
 					"source" : [ "obj-29", 0 ]
 				}
 
@@ -17148,7 +17148,7 @@
 , 			{
 				"patchline" : 				{
 					"destination" : [ "obj-130", 2 ],
-					"order" : 5,
+					"order" : 7,
 					"source" : [ "obj-29", 0 ]
 				}
 
@@ -17156,7 +17156,7 @@
 , 			{
 				"patchline" : 				{
 					"destination" : [ "obj-132", 2 ],
-					"order" : 10,
+					"order" : 13,
 					"source" : [ "obj-29", 0 ]
 				}
 
@@ -17164,7 +17164,7 @@
 , 			{
 				"patchline" : 				{
 					"destination" : [ "obj-134", 2 ],
-					"order" : 16,
+					"order" : 19,
 					"source" : [ "obj-29", 0 ]
 				}
 
@@ -17172,7 +17172,7 @@
 , 			{
 				"patchline" : 				{
 					"destination" : [ "obj-136", 2 ],
-					"order" : 21,
+					"order" : 25,
 					"source" : [ "obj-29", 0 ]
 				}
 
@@ -17180,7 +17180,7 @@
 , 			{
 				"patchline" : 				{
 					"destination" : [ "obj-27", 2 ],
-					"order" : 25,
+					"order" : 24,
 					"source" : [ "obj-29", 0 ]
 				}
 
@@ -17228,7 +17228,7 @@
 , 			{
 				"patchline" : 				{
 					"destination" : [ "obj-38", 2 ],
-					"order" : 24,
+					"order" : 23,
 					"source" : [ "obj-29", 0 ]
 				}
 
@@ -17236,7 +17236,7 @@
 , 			{
 				"patchline" : 				{
 					"destination" : [ "obj-41", 2 ],
-					"order" : 19,
+					"order" : 18,
 					"source" : [ "obj-29", 0 ]
 				}
 
@@ -17244,7 +17244,7 @@
 , 			{
 				"patchline" : 				{
 					"destination" : [ "obj-47", 2 ],
-					"order" : 13,
+					"order" : 12,
 					"source" : [ "obj-29", 0 ]
 				}
 
@@ -17260,46 +17260,6 @@
 , 			{
 				"patchline" : 				{
 					"destination" : [ "obj-51", 2 ],
-					"order" : 3,
-					"source" : [ "obj-29", 0 ]
-				}
-
-			}
-, 			{
-				"patchline" : 				{
-					"destination" : [ "obj-57", 2 ],
-					"order" : 23,
-					"source" : [ "obj-29", 0 ]
-				}
-
-			}
-, 			{
-				"patchline" : 				{
-					"destination" : [ "obj-59", 2 ],
-					"order" : 18,
-					"source" : [ "obj-29", 0 ]
-				}
-
-			}
-, 			{
-				"patchline" : 				{
-					"destination" : [ "obj-61", 2 ],
-					"order" : 12,
-					"source" : [ "obj-29", 0 ]
-				}
-
-			}
-, 			{
-				"patchline" : 				{
-					"destination" : [ "obj-64", 2 ],
-					"order" : 7,
-					"source" : [ "obj-29", 0 ]
-				}
-
-			}
-, 			{
-				"patchline" : 				{
-					"destination" : [ "obj-66", 2 ],
 					"order" : 2,
 					"source" : [ "obj-29", 0 ]
 				}
@@ -17307,7 +17267,7 @@
 			}
 , 			{
 				"patchline" : 				{
-					"destination" : [ "obj-68", 2 ],
+					"destination" : [ "obj-57", 2 ],
 					"order" : 22,
 					"source" : [ "obj-29", 0 ]
 				}
@@ -17315,7 +17275,7 @@
 			}
 , 			{
 				"patchline" : 				{
-					"destination" : [ "obj-70", 2 ],
+					"destination" : [ "obj-59", 2 ],
 					"order" : 17,
 					"source" : [ "obj-29", 0 ]
 				}
@@ -17323,7 +17283,7 @@
 			}
 , 			{
 				"patchline" : 				{
-					"destination" : [ "obj-72", 2 ],
+					"destination" : [ "obj-61", 2 ],
 					"order" : 11,
 					"source" : [ "obj-29", 0 ]
 				}
@@ -17331,7 +17291,7 @@
 			}
 , 			{
 				"patchline" : 				{
-					"destination" : [ "obj-74", 2 ],
+					"destination" : [ "obj-64", 2 ],
 					"order" : 6,
 					"source" : [ "obj-29", 0 ]
 				}
@@ -17339,8 +17299,48 @@
 			}
 , 			{
 				"patchline" : 				{
-					"destination" : [ "obj-76", 2 ],
+					"destination" : [ "obj-66", 2 ],
 					"order" : 1,
+					"source" : [ "obj-29", 0 ]
+				}
+
+			}
+, 			{
+				"patchline" : 				{
+					"destination" : [ "obj-68", 2 ],
+					"order" : 21,
+					"source" : [ "obj-29", 0 ]
+				}
+
+			}
+, 			{
+				"patchline" : 				{
+					"destination" : [ "obj-70", 2 ],
+					"order" : 16,
+					"source" : [ "obj-29", 0 ]
+				}
+
+			}
+, 			{
+				"patchline" : 				{
+					"destination" : [ "obj-72", 2 ],
+					"order" : 10,
+					"source" : [ "obj-29", 0 ]
+				}
+
+			}
+, 			{
+				"patchline" : 				{
+					"destination" : [ "obj-74", 2 ],
+					"order" : 5,
+					"source" : [ "obj-29", 0 ]
+				}
+
+			}
+, 			{
+				"patchline" : 				{
+					"destination" : [ "obj-76", 2 ],
+					"order" : 0,
 					"source" : [ "obj-29", 0 ]
 				}
 
@@ -17977,31 +17977,31 @@
 			}
  ],
 		"parameters" : 		{
-			"obj-51::obj-124" : [ "live.gain~[10]", "live.gain~", 0 ],
-			"obj-70::obj-124" : [ "live.gain~[17]", "live.gain~", 0 ],
-			"obj-66::obj-124" : [ "live.gain~[15]", "live.gain~", 0 ],
-			"obj-130::obj-124" : [ "live.gain~[22]", "live.gain~", 0 ],
-			"obj-134::obj-124" : [ "live.gain~[24]", "live.gain~", 0 ],
+			"obj-34::obj-124" : [ "live.gain~[3]", "live.gain~", 0 ],
 			"obj-49::obj-124" : [ "live.gain~[9]", "live.gain~", 0 ],
-			"obj-47::obj-124" : [ "live.gain~[8]", "live.gain~", 0 ],
+			"obj-68::obj-124" : [ "live.gain~[16]", "live.gain~", 0 ],
 			"obj-27::obj-124" : [ "live.gain~[4]", "live.gain~", 0 ],
 			"obj-36::obj-124" : [ "live.gain~[5]", "live.gain~", 0 ],
-			"obj-32::obj-124" : [ "live.gain~[2]", "live.gain~", 0 ],
-			"obj-59::obj-124" : [ "live.gain~[12]", "live.gain~", 0 ],
-			"obj-34::obj-124" : [ "live.gain~[3]", "live.gain~", 0 ],
-			"obj-76::obj-124" : [ "live.gain~[20]", "live.gain~", 0 ],
-			"obj-72::obj-124" : [ "live.gain~[18]", "live.gain~", 0 ],
-			"obj-68::obj-124" : [ "live.gain~[16]", "live.gain~", 0 ],
-			"obj-64::obj-124" : [ "live.gain~[14]", "live.gain~", 0 ],
-			"obj-132::obj-124" : [ "live.gain~[23]", "live.gain~", 0 ],
-			"obj-136::obj-124" : [ "live.gain~[25]", "live.gain~", 0 ],
-			"obj-41::obj-124" : [ "live.gain~[7]", "live.gain~", 0 ],
-			"obj-38::obj-124" : [ "live.gain~[6]", "live.gain~", 0 ],
-			"obj-30::obj-124" : [ "live.gain~[1]", "live.gain~", 0 ],
-			"obj-61::obj-124" : [ "live.gain~[13]", "live.gain~", 0 ],
+			"obj-74::obj-124" : [ "live.gain~[19]", "live.gain~", 0 ],
+			"obj-51::obj-124" : [ "live.gain~[10]", "live.gain~", 0 ],
 			"obj-57::obj-124" : [ "live.gain~[11]", "live.gain~", 0 ],
 			"obj-128::obj-124" : [ "live.gain~[21]", "live.gain~", 0 ],
-			"obj-74::obj-124" : [ "live.gain~[19]", "live.gain~", 0 ]
+			"obj-32::obj-124" : [ "live.gain~[2]", "live.gain~", 0 ],
+			"obj-66::obj-124" : [ "live.gain~[15]", "live.gain~", 0 ],
+			"obj-130::obj-124" : [ "live.gain~[22]", "live.gain~", 0 ],
+			"obj-72::obj-124" : [ "live.gain~[18]", "live.gain~", 0 ],
+			"obj-61::obj-124" : [ "live.gain~[13]", "live.gain~", 0 ],
+			"obj-132::obj-124" : [ "live.gain~[23]", "live.gain~", 0 ],
+			"obj-134::obj-124" : [ "live.gain~[24]", "live.gain~", 0 ],
+			"obj-64::obj-124" : [ "live.gain~[14]", "live.gain~", 0 ],
+			"obj-70::obj-124" : [ "live.gain~[17]", "live.gain~", 0 ],
+			"obj-59::obj-124" : [ "live.gain~[12]", "live.gain~", 0 ],
+			"obj-38::obj-124" : [ "live.gain~[6]", "live.gain~", 0 ],
+			"obj-76::obj-124" : [ "live.gain~[20]", "live.gain~", 0 ],
+			"obj-136::obj-124" : [ "live.gain~[25]", "live.gain~", 0 ],
+			"obj-41::obj-124" : [ "live.gain~[7]", "live.gain~", 0 ],
+			"obj-30::obj-124" : [ "live.gain~[1]", "live.gain~", 0 ],
+			"obj-47::obj-124" : [ "live.gain~[8]", "live.gain~", 0 ]
 		}
 ,
 		"dependency_cache" : [ 			{
