@@ -9,7 +9,7 @@
 			"modernui" : 1
 		}
 ,
-		"rect" : [ 78.0, 175.0, 623.0, 591.0 ],
+		"rect" : [ 98.0, 146.0, 1122.0, 777.0 ],
 		"bgcolor" : [ 0.65098, 0.666667, 0.662745, 1.0 ],
 		"bglocked" : 0,
 		"openinpresentation" : 0,
@@ -39,14 +39,42 @@
 		"subpatcher_template" : "",
 		"boxes" : [ 			{
 				"box" : 				{
+					"id" : "obj-87",
+					"maxclass" : "comment",
+					"numinlets" : 1,
+					"numoutlets" : 0,
+					"patching_rect" : [ 548.0, 41.0, 150.0, 20.0 ],
+					"style" : "",
+					"text" : "TB-303 synth"
+				}
+
+			}
+, 			{
+				"box" : 				{
+					"id" : "obj-84",
+					"maxclass" : "comment",
+					"numinlets" : 1,
+					"numoutlets" : 0,
+					"patching_rect" : [ 548.0, 14.0, 150.0, 20.0 ],
+					"style" : "",
+					"text" : "Taylor Wiley"
+				}
+
+			}
+, 			{
+				"box" : 				{
+					"fontsize" : 30.0,
 					"id" : "obj-83",
 					"maxclass" : "message",
 					"numinlets" : 2,
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
-					"patching_rect" : [ 211.0, 86.0, 35.0, 22.0 ],
+					"patching_rect" : [ 334.0, 24.0, 78.0, 43.0 ],
+					"presentation" : 1,
+					"presentation_rect" : [ 148.0, 211.0, 360.0, 43.0 ],
 					"style" : "",
-					"text" : "read"
+					"text" : "read",
+					"textjustification" : 1
 				}
 
 			}
@@ -1442,7 +1470,7 @@
 					"outlettype" : [ "" ],
 					"patching_rect" : [ 59.5, 239.0, 50.0, 22.0 ],
 					"style" : "",
-					"text" : "80 0"
+					"text" : "44 0"
 				}
 
 			}
@@ -1613,7 +1641,7 @@
 					"numoutlets" : 0,
 					"patching_rect" : [ 70.0, 361.0, 49.0, 20.0 ],
 					"presentation" : 1,
-					"presentation_rect" : [ 66.0, 237.0, 442.0, 20.0 ],
+					"presentation_rect" : [ 66.0, 237.0, 75.0, 20.0 ],
 					"style" : "",
 					"text" : "square",
 					"textcolor" : [ 0.803922, 0.898039, 0.909804, 1.0 ]
@@ -1629,7 +1657,7 @@
 					"numoutlets" : 0,
 					"patching_rect" : [ 70.0, 341.0, 37.0, 20.0 ],
 					"presentation" : 1,
-					"presentation_rect" : [ 66.0, 211.0, 442.0, 20.0 ],
+					"presentation_rect" : [ 66.0, 211.0, 75.0, 20.0 ],
 					"style" : "",
 					"text" : "saw",
 					"textcolor" : [ 0.803922, 0.898039, 0.909804, 1.0 ]
