@@ -9,7 +9,7 @@
 			"modernui" : 1
 		}
 ,
-		"rect" : [ 98.0, 146.0, 1122.0, 777.0 ],
+		"rect" : [ 34.0, 77.0, 1029.0, 591.0 ],
 		"bgcolor" : [ 0.65098, 0.666667, 0.662745, 1.0 ],
 		"bglocked" : 0,
 		"openinpresentation" : 0,
@@ -1507,7 +1507,7 @@
 					"numinlets" : 1,
 					"numoutlets" : 8,
 					"outlettype" : [ "", "", "", "int", "int", "", "int", "" ],
-					"patching_rect" : [ 90.5, 198.0, 92.5, 22.0 ],
+					"patching_rect" : [ 90.5, 202.0, 92.5, 22.0 ],
 					"style" : "",
 					"text" : "midiparse"
 				}
